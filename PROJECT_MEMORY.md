@@ -79,25 +79,3 @@ src/revit_standards_ssot/  Python package
 tests/                  pytest suite
 sessions/               Per-session work logs
 ```
-
----
-
-## Current status
-
-- [x] Repo skeleton created
-- [x] Markdown governance docs written
-- [x] Dev container configured
-- [x] Python package scaffolded (models, db, ingest, export stubs)
-- [x] pytest stubs written
-- [ ] First real pyRevit extraction run
-- [ ] First real ingest run against real data
-- [ ] Parameter records reviewed and approved
-- [ ] First YAML output generated
-
----
-
-## Open questions / future decisions
-
-- How will approved YAML be consumed downstream? (Dynamo scripts, shared parameter files, etc.)
-- Should `exports/raw/` be git-tracked or gitignored? (Likely gitignored for large repos.)
-- Will we need a review UI or is DB + CSV sufficient for MVP review workflow?

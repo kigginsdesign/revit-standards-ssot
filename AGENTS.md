@@ -3,6 +3,9 @@
 This file contains non-negotiable constraints for any AI coding agent (Claude, Cursor,
 Copilot, etc.) working in this repository.
 
+> **See also:** This project uses a multi-agent workflow.
+> See `ORCHESTRATION.md` for agent coordination and `STATE.md` for current dynamic state.
+
 ---
 
 ## Scope
