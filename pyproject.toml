@@ -1,0 +1,32 @@
+[project]
+name = "revit-standards-ssot"
+version = "0.1.0"
+description = "Single source of truth for Revit shared parameter definitions"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0",
+    "sqlalchemy>=2.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/revit_standards_ssot"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
