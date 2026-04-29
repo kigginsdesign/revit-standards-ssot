@@ -90,3 +90,27 @@ Revit or modifies Revit files. Write-back is out of scope for MVP.
 - Do not add scope, abstractions, or features beyond what the current task requires.
 - Keep generated YAML deterministic: sort keys alphabetically, sort records by GUID.
 - When in doubt, ask before expanding scope.
+
+---
+
+## Execution report format
+
+Every Max session must close with a report using exactly these four sections. No other format is acceptable.
+
+**Git status**
+Output of git status and the commit hash and message of the last commit. If nothing
+was committed this session, say so explicitly.
+
+**What changed**
+Files modified, created, or deleted. Tests added and their pass/fail status. Commit hash if applicable.
+
+**What surprised**
+Anything unexpected during execution — edge cases, schema issues, failed assumptions, constraint violations.
+
+**What's blocked or deferred**
+Work that could not be completed this session. Explicit reason for each item.
+
+**Questions for Sage**
+Tactical decisions or ambiguities that need Sage's input before the next session. If none, write "None."
+
+If a section has nothing to report, write "None." Do not omit sections.

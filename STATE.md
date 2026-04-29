@@ -1,60 +1,58 @@
 # STATE.md — Current Project State
 
-Last updated: 2026-04-27
-
-This file is the dynamic ledger. It changes every session.
-For project constants, see PROJECT_MEMORY.md. For agent coordination, see ORCHESTRATION.md.
+Last updated: 2026-04-28
 
 ---
 
-## Active execution focus
+## Active focus
 
-What Max is currently working on, or the next thing queued for Max.
+What is currently queued for Max, or what Max is working on.
 
-*None yet — pre-execution phase. Repo skeleton and governance docs are in place; awaiting first real pyRevit extraction run to provide ingest test data.*
+None yet — workflow restructured. Awaiting first real pyRevit extraction run.
 
 ---
 
 ## Last execution outcome
 
-Most recent Max session: what changed, what surprised, what's still open.
-
-*None yet.*
+None yet.
 
 ---
 
-## Open questions — architectural (Q's queue)
+## Open questions — for Q
+
+Architectural questions that need Q's input before Sage can spec the next task.
 
 - How will approved YAML be consumed downstream? (Dynamo scripts, shared parameter files, etc.)
-- Should `exports/raw/` be git-tracked or gitignored? (Likely gitignored for large repos — confirm before first real ingest.)
-- Will we need a review UI for proposed→approved workflow, or is DB + CSV sufficient for MVP?
+- Should exports/raw/ be git-tracked or gitignored?
 
 ---
 
-## Open questions — tactical (Sage's queue)
+## Open questions — for Sage
 
-*None yet.*
+Tactical questions deferred from the last Max session.
+
+None yet.
 
 ---
 
 ## Recent decisions
 
-Rolling log, most recent first. Architecturally significant decisions get promoted to PROJECT_MEMORY.md "Key architectural decisions"; tactical decisions stay here.
+Most recent first.
 
-*None yet logged in this format.*
+2026-04-28 — Simplified agent workflow. Removed ORCHESTRATION.md. Sage owns session
+logs and STATE.md updates at closeout. Max report format codified in AGENTS.md.
+Q consulted for architectural decisions only.
 
 ---
 
 ## Progress
 
-Checklist of MVP milestones.
-
 - [x] Repo skeleton created
-- [x] Markdown governance docs written (PROJECT_MEMORY, AGENTS, README)
-- [x] ORCHESTRATION.md and STATE.md created
+- [x] Governance docs written
 - [x] Dev container configured
-- [x] Python package scaffolded (models, db, ingest, export stubs)
+- [x] Python package scaffolded
 - [x] pytest stubs written
+- [x] Agent workflow defined and documented
 - [ ] First real pyRevit extraction run
 - [ ] First real ingest run against real data
 - [ ] Parameter records reviewed and approved
