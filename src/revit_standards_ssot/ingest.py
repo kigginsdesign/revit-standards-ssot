@@ -8,13 +8,13 @@ from __future__ import annotations
 
 import json
 import logging
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from pydantic import ValidationError
 from sqlalchemy.orm import Session
 
-from revit_standards_ssot.models import SharedParameter, SharedParameterRecord
+from revit_standards_ssot.models import RawSharedParameter, SharedParameter, SharedParameterRecord
 
 logger = logging.getLogger(__name__)
 
@@ -31,16 +31,19 @@ def ingest_file(path: Path, session: Session) -> dict[str, int]:
         raise ValueError(f"Expected a JSON array in {path}, got {type(raw).__name__}")
 
     for item in raw:
-        item.setdefault("source_file", path.name)
         try:
-            param = SharedParameter.model_validate(item)
+            raw_param = RawSharedParameter.model_validate(item)
+            param = SharedParameter.model_validate({
+                **raw_param.model_dump(),
+                "source_file": path.name,
+            })
         except ValidationError as exc:
             logger.warning("Rejected record from %s: %s", path.name, exc)
             counts["rejected"] += 1
             continue
 
         existing = session.get(SharedParameterRecord, param.guid)
-        now = datetime.now(timezone.utc)
+        now = datetime.now(UTC)
 
         if existing is None:
             record = SharedParameterRecord(

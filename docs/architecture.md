@@ -39,7 +39,9 @@
 - **Output**: `exports/raw/<YYYYMMDD_HHMMSS>.json`
 - **Contract**: One JSON array of shared parameter objects per run. Never overwrite an
   existing file — always write a new timestamped file.
-- **Fields**: `guid`, `name`, `data_type`, `group`, `description`, `source_file`
+- **Fields**: `guid`, `name`, `data_type`, `group`, `description`
+- **Note**: `source_file` is assigned during container-side ingest from the raw JSON
+  filename. It is not written by the pyRevit extraction script.
 
 ### 2. Ingest
 
@@ -47,9 +49,11 @@
 - **Input**: One or more files from `exports/raw/`
 - **Steps**:
   1. Load JSON
-  2. Validate each record with Pydantic (`SharedParameter` model)
-  3. Upsert into SQLite by GUID (insert new, update changed fields)
-  4. Set `status = raw` on new records; never downgrade existing status
+  2. Validate each raw record with Pydantic (`RawSharedParameter` model)
+  3. Add `source_file` from the input filename and validate the persisted record
+     shape (`SharedParameter` model)
+  4. Upsert into SQLite by GUID (insert new, update changed fields)
+  5. Set `status = raw` on new records; never downgrade existing status
 - **Rule**: Raw export files are not modified.
 
 ### 3. Review (manual)

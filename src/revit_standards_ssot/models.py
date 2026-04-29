@@ -3,11 +3,10 @@
 from __future__ import annotations
 
 import re
-import uuid
-from datetime import datetime, timezone
+from datetime import datetime
 from typing import Literal
 
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel, ConfigDict, field_validator
 from sqlalchemy import DateTime, String, Text, func
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
@@ -33,16 +32,16 @@ KNOWN_DATA_TYPES = {
 # Pydantic validation model
 # ---------------------------------------------------------------------------
 
-class SharedParameter(BaseModel):
-    """Validated representation of a single shared parameter record."""
+class RawSharedParameter(BaseModel):
+    """Validated representation of one raw pyRevit extraction record."""
+
+    model_config = ConfigDict(extra="forbid")
 
     guid: str
     name: str
     data_type: str
     group: str | None = None
     description: str | None = None
-    status: Status = "raw"
-    source_file: str = ""
 
     @field_validator("guid")
     @classmethod
@@ -68,6 +67,21 @@ class SharedParameter(BaseModel):
         return v
 
 
+class SharedParameter(RawSharedParameter):
+    """Validated representation of a persisted shared parameter record."""
+
+    status: Status = "raw"
+    source_file: str
+
+    @field_validator("source_file")
+    @classmethod
+    def source_file_must_be_nonempty(cls, v: str) -> str:
+        v = v.strip()
+        if not v:
+            raise ValueError("source_file must not be empty or whitespace")
+        return v
+
+
 # ---------------------------------------------------------------------------
 # SQLAlchemy ORM
 # ---------------------------------------------------------------------------
@@ -85,7 +99,7 @@ class SharedParameterRecord(Base):
     group: Mapped[str | None] = mapped_column(String(255), nullable=True)
     description: Mapped[str | None] = mapped_column(Text, nullable=True)
     status: Mapped[str] = mapped_column(String(16), nullable=False, default="raw")
-    source_file: Mapped[str] = mapped_column(String(512), nullable=False, default="")
+    source_file: Mapped[str] = mapped_column(String(512), nullable=False)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True),
         server_default=func.now(),
@@ -99,4 +113,7 @@ class SharedParameterRecord(Base):
     )
 
     def __repr__(self) -> str:
-        return f"<SharedParameterRecord guid={self.guid!r} name={self.name!r} status={self.status!r}>"
+        return (
+            f"<SharedParameterRecord guid={self.guid!r} "
+            f"name={self.name!r} status={self.status!r}>"
+        )
