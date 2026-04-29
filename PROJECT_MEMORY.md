@@ -1,6 +1,6 @@
 # PROJECT_MEMORY.md — Canonical Project State
 
-Last updated: 2026-04-28
+Last updated: 2026-04-29
 
 ---
 
@@ -57,6 +57,16 @@ processing reads from these files and writes to the database.
 pyRevit cannot run inside a Docker container (requires Windows + Revit). The extraction
 step is manual/external. The pipeline inside the container starts at ingest.
 
+**Extraction via SharedParameterElement**
+Shared parameters are extracted using Revit's SharedParameterElement via
+FilteredElementCollector rather than ParameterBindings. This ensures reliable detection
+of parameters actually present in the model.
+
+**Environment-variable-based repo resolution**
+pyRevit scripts resolve the repository root using a REVIT_SSOT_REPO environment
+variable. This avoids hardcoded paths and supports separation between pyRevit extension
+location and repo SSOT.
+
 **YAML only for approved**
 The YAML output is the published standard. Only parameters explicitly approved
 (status = approved) appear there.
@@ -102,9 +112,9 @@ user-notes/             Scratch notes, not version-controlled artifacts
 
 - [x] Repo initialized and connected to GitHub
 - [x] Dev container successfully built and validated
-- [x] Python pipeline fully operational inside container (19/19 tests passing)
+- [x] Python pipeline fully operational inside container (27/27 tests passing)
 - [x] Claude Code (Max) running inside Dev Container
-- [ ] First real pyRevit extraction run
+- [x] First real pyRevit extraction run
 - [ ] First real ingest run against real data
 - [ ] Parameter records reviewed and approved
 - [ ] First YAML output generated

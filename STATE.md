@@ -2,29 +2,27 @@
 
 ## Active focus
 
-Complete Step 2 of MVP:
-- Implement pyRevit shared parameter extraction
-- Generate first real JSON payload
+Transition from extraction implementation to first real ingest run.
 
 ## Last execution outcome
 
-- Dev Container operational
-- All tests passing (19/19)
-- GitHub repo live and synced
-- Claude Code (Max) running inside container
+- pyRevit extraction successfully implemented and validated in Revit.
+- SharedParameterElement-based extraction confirmed working (806 parameters exported).
+- Dev container environment stabilized (Claude auth + Codex fallback working).
+- All tests passing (27/27).
 
 ## Recent decisions
 
-- Enforced container-first execution model
-- Eliminated reliance on Windows `.venv`
-- Locked agent behavior to repo-based SSOT only
-- Confirmed dual-environment architecture (Revit vs pipeline)
+- Extraction uses SharedParameterElement instead of ParameterBindings.
+- source_file is assigned during ingest, not extraction.
+- pyRevit script uses REVIT_SSOT_REPO environment variable for repo path.
+- pyRevit extension used as execution interface (button-based workflow).
+- Codex validated as fallback executor to Claude Code.
 
 ## Open questions
 
-- Final field schema for extraction (confirm alignment with architecture.md)
-- Whether to track raw JSON exports in Git or ignore them
-- Exact pyRevit API surface for extracting shared parameters cleanly
+- None for extraction phase.
+- Next phase: ingest behavior on real data (validation edge cases, duplicates, schema surprises).
 
 ## Progress checklist
 
@@ -33,7 +31,7 @@ Complete Step 2 of MVP:
 - [x] Python pipeline + tests
 - [x] GitHub integration
 - [x] Agent container alignment
-- [ ] pyRevit extraction
+- [x] pyRevit extraction
 - [ ] First ingest run
 - [ ] Review + approve parameters
 - [ ] YAML output

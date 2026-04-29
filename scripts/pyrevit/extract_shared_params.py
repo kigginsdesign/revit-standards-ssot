@@ -24,6 +24,12 @@ except Exception:
     LabelUtils = None
 
 try:
+    from Autodesk.Revit.DB import FilteredElementCollector, SharedParameterElement
+except Exception:
+    FilteredElementCollector = None
+    SharedParameterElement = None
+
+try:
     from pyrevit import revit, script
 except Exception:
     revit = None
@@ -34,7 +40,12 @@ EXTRACTED_KEYS = ("guid", "name", "data_type", "group", "description")
 
 
 def _repo_root():
-    return os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+    repo_root = os.environ.get("REVIT_SSOT_REPO")
+    if repo_root is None or not repo_root.strip():
+        raise RuntimeError(
+            "REVIT_SSOT_REPO environment variable must be set to the repository root."
+        )
+    return os.path.abspath(repo_root)
 
 
 def _raw_export_dir():
@@ -78,6 +89,27 @@ def _definition_group(definition):
 def _definition_description(definition):
     description = getattr(definition, "Description", None)
     return description or None
+
+
+def _element_guid(element):
+    guid = getattr(element, "GuidValue", None)
+    if guid is None:
+        return None
+    return str(guid)
+
+
+def _element_definition(element):
+    try:
+        return element.GetDefinition()
+    except Exception:
+        return None
+
+
+def _element_name(element, definition):
+    name = getattr(element, "Name", None)
+    if name:
+        return name
+    return _definition_name(definition)
 
 
 def _normalize_data_type_label(label):
@@ -133,18 +165,29 @@ def _definition_data_type(definition):
 
 
 def _shared_parameter_records(doc):
-    binding_map = doc.ParameterBindings
-    iterator = binding_map.ForwardIterator()
-    iterator.Reset()
+    if FilteredElementCollector is None or SharedParameterElement is None:
+        raise RuntimeError("SharedParameterElement collection requires the Revit API.")
+
+    shared_parameter_elements = list(
+        FilteredElementCollector(doc).OfClass(SharedParameterElement)
+    )
+    _print_message(
+        "Found {0} SharedParameterElement items before filtering.".format(
+            len(shared_parameter_elements)
+        )
+    )
 
     records_by_guid = {}
-    while iterator.MoveNext():
-        definition = iterator.Key
-        guid = _definition_guid(definition)
+    for element in shared_parameter_elements:
+        guid = _element_guid(element)
         if not guid:
             continue
 
-        name = _definition_name(definition)
+        definition = _element_definition(element)
+        if definition is None:
+            continue
+
+        name = _element_name(element, definition)
         data_type = _definition_data_type(definition)
         if not name or not data_type:
             continue
@@ -176,6 +219,13 @@ def _write_json(path, records):
         fh.write("\n")
 
 
+def _print_message(message):
+    if script is not None:
+        script.get_output().print_md(message)
+    else:
+        print(message)
+
+
 def main():
     if revit is None:
         raise RuntimeError("This script must be run from pyRevit inside Revit.")
@@ -193,10 +243,7 @@ def main():
     _write_json(output_path, records)
 
     message = "Exported {0} shared parameters to {1}".format(len(records), output_path)
-    if script is not None:
-        script.get_output().print_md(message)
-    else:
-        print(message)
+    _print_message(message)
 
 
 if __name__ == "__main__":

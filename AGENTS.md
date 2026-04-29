@@ -122,6 +122,9 @@ If a section has nothing to report, write "None." Do not omit sections.
 - All Python pipeline operations MUST run inside the Dev Container (`/workspace`).
 - Do NOT run pipeline code from Windows paths (e.g., `C:\Dev\...`).
 - The only allowed Windows execution is pyRevit extraction.
+- pyRevit scripts are authored in-repo but executed manually in Revit on Windows.
+- Agents must not attempt to execute or validate pyRevit scripts inside the dev container.
+- Validation of pyRevit behavior requires user execution and feedback.
 
 ---
 

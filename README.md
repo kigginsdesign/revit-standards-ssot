@@ -46,6 +46,12 @@ uv run pytest
 
 pyRevit scripts live in `scripts/pyrevit/`. They must be run inside Revit on a Windows
 machine with pyRevit installed. They cannot run inside the dev container.
+
+The extraction script must be exposed through a pyRevit extension button workflow, with
+`REVIT_SSOT_REPO` set to the repository root. Extraction uses Revit's
+`SharedParameterElement` API via `FilteredElementCollector`, not `ParameterBindings`, and
+writes raw JSON evidence to the repo `exports/raw/` directory.
+
 See `scripts/pyrevit/README.md` for instructions.
 
 ## Status values
