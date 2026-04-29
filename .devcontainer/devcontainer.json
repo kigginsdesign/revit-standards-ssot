@@ -6,12 +6,14 @@
     },
     "workspaceFolder": "/workspace",
     "mounts": [
-        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+        "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+        "source=${localEnv:USERPROFILE}\\.claude,target=/root/.claude,type=bind",
+        "source=${localEnv:USERPROFILE}\\.claude.json,target=/root/.claude.json,type=bind"
     ],
     "containerEnv": {
         "CLAUDE_CODE_OAUTH_TOKEN": "${localEnv:CLAUDE_CODE_OAUTH_TOKEN}"
     },
-    "postCreateCommand": "uv sync --extra dev",
+    "postCreateCommand": "uv sync --extra dev && curl -fsSL https://claude.ai/install.sh | bash && echo 'export PATH=\"$HOME/.local/bin:$PATH\"' >> /root/.bashrc",
     "customizations": {
         "vscode": {
             "extensions": [
