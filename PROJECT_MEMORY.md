@@ -95,3 +95,33 @@ src/revit_standards_ssot/  Python package
 sessions/               Sage session logs (YYYY-MM-DD_sage_<topic>.md)
 tests/                  pytest suite
 user-notes/             Scratch notes, not version-controlled artifacts
+
+---
+
+## Current status
+
+- [x] Repo initialized and connected to GitHub
+- [x] Dev container successfully built and validated
+- [x] Python pipeline fully operational inside container (19/19 tests passing)
+- [x] Claude Code (Max) running inside Dev Container
+- [ ] First real pyRevit extraction run
+- [ ] First real ingest run against real data
+- [ ] Parameter records reviewed and approved
+- [ ] First YAML output generated
+
+---
+
+## Environment model (locked)
+
+- Windows host is used ONLY for:
+  - Revit 2026
+  - pyRevit execution
+
+- Dev Container is used for:
+  - All Python pipeline work
+  - Testing (pytest)
+  - Database interaction
+  - YAML / CSV generation
+  - Coding agent execution
+
+- Local `.venv` on Windows is deprecated and should not be used going forward.

@@ -1,59 +1,39 @@
-# STATE.md — Current Project State
-
-Last updated: 2026-04-28
-
----
+# STATE.md
 
 ## Active focus
 
-What is currently queued for Max, or what Max is working on.
-
-None yet — workflow restructured. Awaiting first real pyRevit extraction run.
-
----
+Complete Step 2 of MVP:
+- Implement pyRevit shared parameter extraction
+- Generate first real JSON payload
 
 ## Last execution outcome
 
-None yet.
-
----
-
-## Open questions — for Q
-
-Architectural questions that need Q's input before Sage can spec the next task.
-
-- How will approved YAML be consumed downstream? (Dynamo scripts, shared parameter files, etc.)
-- Should exports/raw/ be git-tracked or gitignored?
-
----
-
-## Open questions — for Sage
-
-Tactical questions deferred from the last Max session.
-
-None yet.
-
----
+- Dev Container operational
+- All tests passing (19/19)
+- GitHub repo live and synced
+- Claude Code (Max) running inside container
 
 ## Recent decisions
 
-Most recent first.
+- Enforced container-first execution model
+- Eliminated reliance on Windows `.venv`
+- Locked agent behavior to repo-based SSOT only
+- Confirmed dual-environment architecture (Revit vs pipeline)
 
-2026-04-28 — Simplified agent workflow. Removed ORCHESTRATION.md. Sage owns session
-logs and STATE.md updates at closeout. Max report format codified in AGENTS.md.
-Q consulted for architectural decisions only.
+## Open questions
 
----
+- Final field schema for extraction (confirm alignment with architecture.md)
+- Whether to track raw JSON exports in Git or ignore them
+- Exact pyRevit API surface for extracting shared parameters cleanly
 
-## Progress
+## Progress checklist
 
-- [x] Repo skeleton created
-- [x] Governance docs written
-- [x] Dev container configured
-- [x] Python package scaffolded
-- [x] pytest stubs written
-- [x] Agent workflow defined and documented
-- [ ] First real pyRevit extraction run
-- [ ] First real ingest run against real data
-- [ ] Parameter records reviewed and approved
-- [ ] First YAML output generated
+- [x] Repo scaffold
+- [x] Dev container
+- [x] Python pipeline + tests
+- [x] GitHub integration
+- [x] Agent container alignment
+- [ ] pyRevit extraction
+- [ ] First ingest run
+- [ ] Review + approve parameters
+- [ ] YAML output

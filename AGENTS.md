@@ -114,3 +114,38 @@ Work that could not be completed this session. Explicit reason for each item.
 Tactical decisions or ambiguities that need Sage's input before the next session. If none, write "None."
 
 If a section has nothing to report, write "None." Do not omit sections.
+
+---
+
+## Execution environment rules
+
+- All Python pipeline operations MUST run inside the Dev Container (`/workspace`).
+- Do NOT run pipeline code from Windows paths (e.g., `C:\Dev\...`).
+- The only allowed Windows execution is pyRevit extraction.
+
+---
+
+## Agent runtime location requirement
+
+Before executing any task, agents MUST confirm:
+
+- `pwd` returns `/workspace`
+- Python version matches container environment
+- Tests pass via `uv run pytest`
+
+If these conditions are not met, STOP and correct environment before proceeding.
+
+---
+
+## Agent Memory Policy
+
+Agents must NOT rely on external or hidden memory systems
+(e.g., Claude project memory, IDE extensions, or local caches)
+as a source of truth.
+
+All persistent knowledge must be written to:
+- PROJECT_MEMORY.md
+- /docs/
+- /sessions/
+
+The Git repository is the only authoritative memory.

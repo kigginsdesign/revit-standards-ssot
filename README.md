@@ -62,3 +62,38 @@ See `scripts/pyrevit/README.md` for instructions.
 - GUID is the sole stable identifier. Never use Revit ElementId as a persistent key.
 - Only records with `status = approved` appear in generated YAML.
 - `exports/raw/` is read-only. Do not modify files there.
+
+## Development Environments
+
+This project uses a dual-environment model:
+
+### 1. Dev Container (Primary)
+
+All development work is done inside the VS Code Dev Container.
+
+Includes:
+- Python runtime
+- uv-managed environment
+- pytest
+- SQLAlchemy / Pydantic pipeline
+
+Run:
+
+```bash
+uv run pytest
+```
+
+### 2. Windows Host (Revit Only)
+
+Used only for:
+
+- Revit 2026
+- pyRevit extraction scripts
+
+The extraction step outputs JSON into:
+
+```
+exports/raw/
+```
+
+which is then consumed by the container pipeline.
