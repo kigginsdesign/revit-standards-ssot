@@ -21,7 +21,7 @@
 | Metric | Value |
 |---|---|
 | Total `SharedParameter` rows | 806 |
-| DB path | `db/standards.db` |
+| DB path | `db/standards.db` (resolves to `/workspace/db/standards.db`) |
 
 **Note:** `db/standards.db` is gitignored and does not survive container resets. The ingest must be re-run after any container restart using the established command:
 
@@ -275,9 +275,23 @@ Before any record is promoted from `raw` → `proposed` or `approved`:
 
 ## Ingest Session Notes
 
-The `db/standards.db` artifact was absent at the start of this audit session (container
-reset between sessions). Ingest was re-run per task instructions. The re-run produced
-`{"inserted": 0, "updated": 806, "rejected": 0}` rather than `{"inserted": 806, ...}`,
-indicating the database had been recreated (likely by `uv run pytest`, which calls
-`make_session_factory()` → `create_tables()`) before the ingest command ran. All 806
-records were updated from the prior ingest state. No data integrity issues resulted.
+**Corrected 2026-05-01** — A subsequent session discovered that `_DEFAULT_DB_PATH` in
+`src/revit_standards_ssot/db.py` was computing `parents[3]` instead of `parents[2]`,
+causing all ingests to write to `/db/standards.db` (filesystem root) rather than
+`/workspace/db/standards.db`. The audit session's check for `db/standards.db` returned
+"not found" because it was checking the correct workspace path — but the actual database
+existed at the wrong root path from the first ingest session.
+
+After fixing the path (`parents[3]` → `parents[2]`) and running a clean ingest against
+`/workspace/db/standards.db`, the result was:
+
+```
+{"inserted": 806, "updated": 0, "rejected": 0}
+```
+
+These are the authoritative ingest counts for this export file. The "806 updated" figure
+from the audit session was an artifact of the path bug and should be disregarded.
+
+Tests were already using in-memory SQLite (`sqlite:///:memory:`) and never touched either
+database path. A session-scoped autouse fixture in `tests/conftest.py` now enforces this
+as a regression guard.

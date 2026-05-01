@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session, sessionmaker
 
 from revit_standards_ssot.models import Base
 
-_DEFAULT_DB_PATH = Path(__file__).resolve().parents[3] / "db" / "standards.db"
+_DEFAULT_DB_PATH = Path(__file__).resolve().parents[2] / "db" / "standards.db"
 
 
 def get_engine(db_path: Path | None = None):
