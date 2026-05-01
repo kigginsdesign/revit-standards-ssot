@@ -14,7 +14,12 @@ from pathlib import Path
 from pydantic import ValidationError
 from sqlalchemy.orm import Session
 
-from revit_standards_ssot.models import RawSharedParameter, SharedParameter, SharedParameterRecord
+from revit_standards_ssot.models import (
+    KNOWN_DATA_TYPES,
+    RawSharedParameter,
+    SharedParameter,
+    SharedParameterRecord,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -25,6 +30,8 @@ def ingest_file(path: Path, session: Session) -> dict[str, int]:
     Returns a dict with counts: {"inserted": N, "updated": N, "rejected": N}.
     """
     counts = {"inserted": 0, "updated": 0, "rejected": 0}
+    unknown_dtype_counts: dict[str, int] = {}
+    unknown_dtype_samples: dict[str, list[str]] = {}
 
     raw = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(raw, list):
@@ -41,6 +48,12 @@ def ingest_file(path: Path, session: Session) -> dict[str, int]:
             logger.warning("Rejected record from %s: %s", path.name, exc)
             counts["rejected"] += 1
             continue
+
+        if param.data_type not in KNOWN_DATA_TYPES:
+            unknown_dtype_counts[param.data_type] = unknown_dtype_counts.get(param.data_type, 0) + 1
+            samples = unknown_dtype_samples.setdefault(param.data_type, [])
+            if len(samples) < 3:
+                samples.append(param.name)
 
         existing = session.get(SharedParameterRecord, param.guid)
         now = datetime.now(UTC)
@@ -71,6 +84,15 @@ def ingest_file(path: Path, session: Session) -> dict[str, int]:
             logger.info("Updated %s (%s)", param.name, param.guid)
 
     session.commit()
+
+    for dtype in sorted(unknown_dtype_counts, key=lambda d: -unknown_dtype_counts[d]):
+        logger.warning(
+            "data_type not in KNOWN_DATA_TYPES: %r — %d record(s), e.g. %s",
+            dtype,
+            unknown_dtype_counts[dtype],
+            ", ".join(repr(n) for n in unknown_dtype_samples[dtype]),
+        )
+
     return counts
 
 

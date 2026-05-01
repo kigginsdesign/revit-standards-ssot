@@ -23,8 +23,9 @@ _UUID_RE = re.compile(
 
 KNOWN_DATA_TYPES = {
     "Text", "Integer", "Number", "Length", "Area", "Volume", "Angle",
-    "URL", "Material", "YesNo", "MultilineText", "Currency",
+    "URL", "Material", "Yes/No", "MultilineText", "Currency",
     "LoadClassification", "Image", "FamilyType",
+    # "Yes/No" is the raw Revit-emitted string; do not normalize to "YesNo" during ingest.
 }
 
 

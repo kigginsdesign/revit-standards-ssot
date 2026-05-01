@@ -77,7 +77,7 @@ Sorted by count descending. Values absent from `KNOWN_DATA_TYPES` are marked wit
 | 291 | `Text` | Yes |
 | 179 | `Length` | Yes |
 | 102 | `Material` | Yes |
-| 52 | `Yes/No` * | No |
+| 52 | `Yes/No` | Yes |
 | 51 | `Integer` | Yes |
 | 41 | `URL` | Yes |
 | 16 | `Number` | Yes |
@@ -106,15 +106,15 @@ Sorted by count descending. Values absent from `KNOWN_DATA_TYPES` are marked wit
 | 1 | `Velocity` * | No |
 
 **Total distinct data_type values:** 30  
-**Absent from `KNOWN_DATA_TYPES`:** 20 distinct values, 133 records
+**Absent from `KNOWN_DATA_TYPES`:** 19 distinct values, 81 records
 
 ### Values absent from KNOWN_DATA_TYPES
 
 The following data_type strings appear in the ingested data but are not listed in
-`KNOWN_DATA_TYPES` in `src/revit_standards_ssot/models.py`:
+`KNOWN_DATA_TYPES` in `src/revit_standards_ssot/models.py`. Each triggers a
+`WARNING`-level log entry during ingest with count and sample parameter names.
 
 ```
-Yes/No (52)
 Reinforcement Length (12)
 Temperature (9)
 Air Flow (7)
@@ -136,23 +136,22 @@ Flow (1)
 Velocity (1)
 ```
 
-Per Sage policy: these values are **not rejected during ingest**. `KNOWN_DATA_TYPES` is
-informational only. Unknown values are accepted as raw Revit-emitted text and flagged here
-for human review only.
+Per Sage policy: these values are **not rejected during ingest**. Unknown values are
+accepted as raw Revit-emitted text. Each distinct unknown `data_type` produces a
+`WARNING`-level log entry with count and up to three sample parameter names.
 
 ---
 
 ## Yes/No Preservation Note
 
 **`Yes/No` (with slash) is the exact string emitted by Revit's shared parameter file
-format.** It is preserved verbatim during ingest. The `KNOWN_DATA_TYPES` constant in
-`models.py` contains `"YesNo"` (no slash), which does not match the Revit string.
+format.** It is preserved verbatim during ingest. `KNOWN_DATA_TYPES` in `models.py` now
+contains `"Yes/No"` (matching the raw Revit value). The prior entry `"YesNo"` has been
+removed.
 
 Per Sage policy:
 - Do **not** normalize `Yes/No` → `YesNo` during ingest.
-- Do **not** add `Yes/No` as a rejection criterion.
-- `KNOWN_DATA_TYPES` may need to be updated to match reality, but that decision is deferred
-  to human curation.
+- `Yes/No` records do **not** trigger the unknown-data_type warning.
 
 Affected records: **52**
 
