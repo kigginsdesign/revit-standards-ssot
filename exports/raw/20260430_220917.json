@@ -1,0 +1,5644 @@
+[
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "00000000-0000-0000-0000-000000000001", 
+    "name": "Copyright"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "00000000-0000-0000-0000-000000000003", 
+    "name": "Manufacturer Address"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "00000000-0000-0000-0000-000000000004", 
+    "name": "Manufacturer Phone"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "00000000-0000-0000-0000-000000000005", 
+    "name": "Manufacturer Fax"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "00000000-0000-0000-0000-000000000006", 
+    "name": "Manufacturer Email"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "00000000-0000-0000-0000-000000000007", 
+    "name": "Manufacturer Website"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "00000000-0000-0000-0000-000000000008", 
+    "name": "Specification"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "00000000-0000-0000-0000-000000000009", 
+    "name": "Product Data"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "00000000-0000-0000-0000-000000000010", 
+    "name": "Green Building-LEED"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "00000000-0000-0000-0000-000000000011", 
+    "name": "Construction Details"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "00000000-0000-0000-0000-000000000012", 
+    "name": "Test Data"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "00000000-0000-0000-0000-000000000013", 
+    "name": "Sales Information"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "00000000-0000-0000-0000-000000000014", 
+    "name": "Installation-Fabrication"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "00000000-0000-0000-0000-000000000015", 
+    "name": "Drawn By"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Phasing", 
+    "guid": "00000000-0000-0000-0000-000000000016", 
+    "name": "Warranty Duration (Years)"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Phasing", 
+    "guid": "00000000-0000-0000-0000-000000000017", 
+    "name": "Maintenance Schedule (Months)"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Phasing", 
+    "guid": "00000000-0000-0000-0000-000000000018", 
+    "name": "Installation Phase"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Phasing", 
+    "guid": "00000000-0000-0000-0000-000000000019", 
+    "name": "Expected Lifespan (Years)"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "00000000-0000-0000-0000-000000000020", 
+    "name": "Building Codes"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "00725736-7356-407d-8c19-f9ee67ba8552", 
+    "name": "Series"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Graphics", 
+    "guid": "00812384-b2cd-402e-b09a-c9cacd5c63f7", 
+    "name": "Mullion Visibility"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "00d0cff6-fbf9-47dd-8304-15835f4df4e6", 
+    "name": "z Overall Width"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "0101d8bc-35b7-4410-a3e2-10d7ab0e8c40", 
+    "name": "Product data url"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "0126a5aa-fbd9-4239-a247-65645883a52e", 
+    "name": "Region Africa"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "012aafe1-25f4-49b4-ba2a-20e246e5fef6", 
+    "name": "Ladder Clearance"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "0184adcf-25f4-47e9-a04c-6774988620cb", 
+    "name": "z Type Model"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Mechanical - Loads", 
+    "guid": "0228db7c-0ea2-46a0-baf2-1c9a68e34f86", 
+    "name": "Rated Cooling Capacity"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "02ffd3b4-de11-446f-bdaa-dec8d295f9b9", 
+    "name": "Max. height difference between Outdoor Unit and each Indoor Units"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "0328c1f0-95bf-4f08-a0b5-cbca05bac166", 
+    "name": "Design Pressure XX"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "0332d4dd-060c-4af9-a671-95deb2a0f0c1", 
+    "name": "Sash Width"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "03ad72d6-38bd-4784-952e-6242c43918b1", 
+    "name": "Product URL"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "0479ee7f-33a9-4de6-ae32-2effffe26b57", 
+    "name": "Sash Thickness"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "04802b5a-7727-4e47-8146-bda629dcd078", 
+    "name": "Design Pressure"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "048724a1-1cb3-4a7d-938b-6cc95ef7308f", 
+    "name": "SP_Allowable Loads_Roof_125"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "General", 
+    "guid": "049391e0-c9b7-4d13-bcfb-84c309686c1f", 
+    "name": "Nominal width"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "05b8adb2-ab4a-4ede-b0f2-739a13aa8a2c", 
+    "name": "Sash Thickness"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "06956078-e3cf-4ea8-91c2-ebd979725801", 
+    "name": "X Clearance"
+  }, 
+  {
+    "data_type": "Air Flow", 
+    "description": null, 
+    "group": "Mechanical - Flow", 
+    "guid": "06b36486-aafc-4cde-ac5c-d54281e4bae8", 
+    "name": "Minimum Air Flow"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "06c34fde-c775-465b-9fcf-05c08b311665", 
+    "name": "Base Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "06eb9242-951c-41c0-bc74-00da18bd9fea", 
+    "name": "Glass Material Add'l Info"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "07000000-0000-0000-0000-000000000006", 
+    "name": "Trim Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "0710911f-73ca-49cb-b2d2-35e358197ed1", 
+    "name": "Shelf Width"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "071b05d5-635c-411d-ae2e-9413910cc30c", 
+    "name": "Cadac content versie"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "078a2655-8c23-4c00-82fa-60299de3a350", 
+    "name": "ENGworks URL"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "08000000-0000-0000-0000-000000000001", 
+    "name": "Sound Transmission Class (STC)"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "08000000-0000-0000-0000-000000000002", 
+    "name": "U-Factor"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "08000000-0000-0000-0000-000000000003", 
+    "name": "SHGC"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "084757fa-983a-4fcb-8d86-5bbb3a97efff", 
+    "name": "z Fill Interior Radius Front"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "086ddb6f-e12c-4a32-8e87-47059ea66ee9", 
+    "name": "Visible Light Transmittance"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "0898a57f-0eb2-4199-b805-3c43533f8028", 
+    "name": "Watermarked By"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "094761ba-39f5-4e2b-b711-9c4e239de4e3", 
+    "name": "Panel Height"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "0952cfbd-8103-4fe5-ad48-39f9cfc3752e", 
+    "name": "Masterformat 2014 Description"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "09f1de2d-268b-46df-8d9d-7546a90225df", 
+    "name": "SHGC"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "0a0337d1-d068-493e-bc87-012be2a02ea9", 
+    "name": "Lite Cut Prairie"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "0a0b43df-28c1-4d0f-a522-e464ebf4d4ac", 
+    "name": "SPF/HF_Allowable Loads_Wind_160"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "0a4b48f2-6b41-4cc4-a33a-e728e8f0462f", 
+    "name": "Region Asia"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "0a5a6b32-5ee3-40df-b3a5-3093b7fc34a9", 
+    "name": "Pipe type of heat exchanger"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "0a80a6d4-9571-4df6-9677-03211e72047a", 
+    "name": "W"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "0b8872e2-8b42-401f-9892-8043f86decf3", 
+    "name": "TAG 2"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "0bc1aeb3-6718-48b9-9beb-bfa2b76594d2", 
+    "name": "SP_Allowable Loads_Wind_160"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "0c1a84cd-1210-40c8-9a12-20559b102e3e", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "0c7162e3-bc4d-46b0-a723-72136dedf270", 
+    "name": "Handle Pull Material"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "0cb27658-25da-438c-9d5a-f0ff8ef5fe3f", 
+    "name": "Table Edge Finish"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "0cb2cdcb-fc9c-4698-8838-e82c4917ddcf", 
+    "name": "U Values URL Triple Glaze"
+  }, 
+  {
+    "data_type": "Area", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "0d21ad7d-0db0-489a-a1fa-10d502d650b7", 
+    "name": "Vent Area"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "0d6cd2b9-6c54-48b2-ad21-e2544d49dba3", 
+    "name": "Beam_SDS1/4x2 1/2 Screws"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "0d902052-a429-459e-a9d8-e78aa0d2b348", 
+    "name": "Design country"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "0da8245b-d490-4514-82de-62c5f8d5a54f", 
+    "name": "z Interior Radius Back"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "0db7c418-2f79-42de-8bb1-ceac6c94cbf8", 
+    "name": "Gas Connection Diameter"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "0f11249c-eb37-4cf3-86ab-bb4f90e61bac", 
+    "name": "Corner Lite Prairie"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "0f32c60f-7a35-42eb-9eca-b4c2e7f98017", 
+    "name": "Max Height"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "0f46e8d2-dcdc-4f60-bbc6-87637b0a10ea", 
+    "name": "Product Documentation Link URL"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "0f71d0a1-069f-4f47-889e-8a0aa4d318c6", 
+    "name": "Door Slab Finish"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "0fe02b78-a9e8-4363-84eb-8d61c602b019", 
+    "name": "# OF FLG BOLTS"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "0fe442ac-80db-41ed-a199-c90d206c2020", 
+    "name": "Frame Thickness"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "106a9be5-af9c-4c76-bf5d-835056840ba5", 
+    "name": "Unit Height"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "106f2a8b-3006-4864-aaf0-d07ea744b6f1", 
+    "name": "Width"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "111cad5b-1af1-4522-a4cb-269b5fb50936", 
+    "name": "Actual Rough Width"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "119f72ce-4488-4605-8ca4-733b0851ffb8", 
+    "name": "Operation temperature range_Cooling"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "11a44575-5c82-4b16-aaa6-b599cedcf811", 
+    "name": "Muntins Interior Finish"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "11e73631-4456-4fde-8966-e300c1d42930", 
+    "name": "Muntins Exterior Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "120e9f34-f957-428f-a31f-6abf126972dc", 
+    "name": "Prairie Corner Height"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "1297a35b-f0e0-4a19-aa81-36a9c41d2c48", 
+    "name": "Region North America"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "12f5fd2e-7a26-4fe7-a715-d3109a7b15c6", 
+    "name": "Min Heel Height"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "1326cae3-e4e6-4328-900d-bdffbfdbb961", 
+    "name": "Part Description"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "132e4748-80b3-4076-af26-d43c85f60eba", 
+    "name": "Is Void"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "14166a3a-8a7d-4572-b8e3-1130a4a506cc", 
+    "name": "Fasteners_Beam Flange_Type"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "146cbe5d-392d-42b0-8894-7912138bcd05", 
+    "name": "Finish"
+  }, 
+  {
+    "data_type": "Angle", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "1471a824-b10b-401b-8c37-c49114d0819c", 
+    "name": "z End Angle Half"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "149c8baa-08a6-48e0-ad43-898f08ddffff", 
+    "name": "Fasteners_Post Flange_16d"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Green Building Properties", 
+    "guid": "14a4a813-1981-4853-a05c-0c553b8be5a1", 
+    "name": "LEED Credit"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Graphics", 
+    "guid": "14f24362-2534-441f-8211-dbaa30742df3", 
+    "name": "Lateral View"
+  }, 
+  {
+    "data_type": "Volume", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "150393da-f9e2-4f06-9524-a8b303c87883", 
+    "name": "Earthwork Fill"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "151334bc-39b6-467e-8ef6-bac8aadef138", 
+    "name": "DF/SP_Allowable Loads_Steel Side Plate Shear_100_16ga"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "15c25b30-83e8-4c4f-bdfa-f3f47ae75ce1", 
+    "name": "Exterior Handle"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "16286c7f-967b-48cc-8361-06c643fe3d5b", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Construction", 
+    "guid": "162a739a-e92a-4db6-ba2b-5e64df18925b", 
+    "name": "Has Grid"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "1679e25a-bdc1-41dc-af51-843a65b66993", 
+    "name": "Cladding Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "169883c6-96f4-4415-9c0d-10467b531504", 
+    "name": "Liquid Connection Offset Bottom"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "16a2b836-0b1e-49d4-a077-02644d0f417d", 
+    "name": "Pellicle"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "1704ff5b-16e1-47bc-b02d-6dba74ed2cb9", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Force", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "17220ac6-8ebb-4bcd-a137-56f89f49e1ab", 
+    "name": "Capacity (Lbs)"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "177a16d0-051f-4b4d-89b3-86e0ed45a01a", 
+    "name": "Product Properties"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "180c1cd2-b840-4232-b17f-ddc40eb6ebe5", 
+    "name": "Casters"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "181635d7-fedc-4038-9290-b5e5e52cb7b6", 
+    "name": "Actual Length"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "184016aa-81bc-40bb-b086-d381363d27e0", 
+    "name": "Equipment Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "1876075b-66a1-4892-a1b2-417fcdbd9ae7", 
+    "name": "Manufacturer Phone - Toll Free"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "18888288-2b4f-4d4b-a46e-3526ecbbc5a0", 
+    "name": "Window Frame Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "18942e34-8dd4-471c-9bc2-503d2e7e25ce", 
+    "name": "Region South America"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "194166dd-16f3-4e6c-ad5a-99ca23bee84c", 
+    "name": "Manufacturer's Webpage"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "1963b25e-af4f-4574-baac-512b9f5e32b2", 
+    "name": "Base Price"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "19b54282-1bdf-4f5f-b89c-1fa1745af156", 
+    "name": "Specification Sheet"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "19cb7ecb-21b4-4012-93ab-47fcc0cb8913", 
+    "name": "Output of fan motor"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "19d65a23-8243-464c-9196-200ed79b8e9a", 
+    "name": "Shelf Spacing"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "1a07c3d5-4195-43ab-af1d-477787feddaa", 
+    "name": "BIMobject category"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "1a0a2baf-30c1-47e7-8837-126373f5e884", 
+    "name": "Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "1a746826-fa30-406e-9670-584b63913566", 
+    "name": "Metal Gauge"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "1a8dcfd7-37fa-4e8a-81e2-919fc9bfb733", 
+    "name": "SPF_Allowable Withdrawal per Thread Penetration_100"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "1b0636f6-a681-453a-9095-11658443530e", 
+    "name": "SPF/HF_Allowable Loads_Steel Side Plate Shear_100_10ga"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "1c0e371f-fac3-4e8e-b7bf-f4d88d487f2f", 
+    "name": "Operating Configuration"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "1c426e35-2741-4c38-af9c-0b3d29c6de80", 
+    "name": "Uniclass 2015 Code"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "1c8c820c-d723-4687-befb-1fb70526f7b5", 
+    "name": "Bench Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "1c9d8984-d7f3-402f-85f2-a3481305b403", 
+    "name": "Surface treatment of heat exchanger"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "1d141f20-2a1c-4eda-8763-ea9dfd130854", 
+    "name": "HV Grid Lite Cut"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "1d222383-9714-4ed3-9849-021f1d12d113", 
+    "name": "SKU"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "1f699502-3d93-4e06-99de-1cc070a8decf", 
+    "name": "QR code"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "1f9cbaba-0477-489e-a406-ee3dcf7a59ec", 
+    "name": "R Value"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "1fb3c3d5-73c6-4be6-9b30-73bc1a0a51da", 
+    "name": "Fasteners_Joist_Quantity"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "1fbb5bc0-7453-4fe3-9e06-e52ebb6ddd3c", 
+    "name": "B4"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "1fbf57c4-13d0-45b4-a40c-bfd9faee7b7e", 
+    "name": "LEED Credit"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "2058456f-eeff-48c6-9898-25868f0a4c03", 
+    "name": "Uniformat II Description"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "20f22411-9dad-4b9b-b78a-9c61b63fdf0f", 
+    "name": "Frame Material"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "212a01fa-2c98-4701-b63d-d0c65557000d", 
+    "name": "Threshold Material"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "215ad52a-875f-4ef0-af16-194d1baf9ac0", 
+    "name": "EAN code"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "216a94c9-f725-416a-a351-5cd0bd9aa18c", 
+    "name": "Tag Width Feet"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "2246f220-1a55-42d0-860b-5e76ac624008", 
+    "name": "Allowable Joist Depth Below_Single Bottom Plate_Max"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "2277e231-d93d-4b24-8965-e872d177ea2b", 
+    "name": "Novotny temp parameter Integer"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "22a40417-e235-4bfd-84d0-4c0490abc373", 
+    "name": "Product Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "22bda75c-332e-4c51-b6f2-a0f0056af5b2", 
+    "name": "DF/SP Allowable Loads_Uplift_160"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "2316b029-250d-4b1d-9ca1-7cb9bfd925d8", 
+    "name": "ParameterTest"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "241784b5-7cc7-4f34-a688-02d96f49c92e", 
+    "name": "Overall Height"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "24218633-609b-4103-b4cf-4fce5091ff3f", 
+    "name": "Sash Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "254ce5ed-0745-42e3-bb4d-c7d0e69dd82b", 
+    "name": "Joist Depth_Double Bot. Plate_Max"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "25a1279b-4a77-422f-a56d-a1b3cab71993", 
+    "name": "Fastener Post"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "25f64967-9394-4fa8-8137-4af04b0d5863", 
+    "name": "SPF/HF_Allowable Loads_Steel Side Plate Shear_100_16ga"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "2623b544-5506-438b-aec5-62cd35517ed6", 
+    "name": "Door Type"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "26e1042d-6a27-4175-baaf-e3a56941a75d", 
+    "name": "Clearance Right Pattern 2"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "26fbcc0b-d545-4654-8d8d-421c7acf6d9d", 
+    "name": "SST_Text"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "276eee69-4986-4c2f-bd9a-25c31bc37fcf", 
+    "name": "Connectable indoor unit capacity"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "27e517b1-729f-48ff-83db-fb9546bcf732", 
+    "name": "Height C"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "283d94ba-67d2-45d8-92a0-3ab10cef0801", 
+    "name": "Material"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "288e0ef4-67c3-42b1-849e-5bf8528e455d", 
+    "name": "Sash Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "294da769-20d5-4163-943c-33e892b6a334", 
+    "name": "Uniformat II Code"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "296d5d7b-a9bf-4ba8-aee2-ba18c524793c", 
+    "name": "Catalog Code"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "2a32ffd2-9e8b-4176-98e3-5afeff5b26e1", 
+    "name": "Interior Material"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "2a42d253-9408-4e73-b551-c9ddd9fc41a2", 
+    "name": "Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Green Building Properties", 
+    "guid": "2a91b0fd-1d30-4460-a431-a7a28aa69007", 
+    "name": "Energy Star Zone"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "2aa7782f-4807-4baa-bbf2-3b4592efb845", 
+    "name": "Heat Exchanger Type"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "2b03be67-f10f-4e5e-aa40-a09e279af6bd", 
+    "name": "Door Type Number"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "2b11bad5-5bb6-49ac-96dc-a92f0a3ebc2a", 
+    "name": "Clearance Offset Top"
+  }, 
+  {
+    "data_type": "Pipe Size", 
+    "description": null, 
+    "group": "Plumbing", 
+    "guid": "2b323af4-621e-403e-b3ed-fbe89d162c1c", 
+    "name": "Waste Connection NPT"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "2b417822-5930-4547-9fe0-439fcc2be864", 
+    "name": "Tag Height Feet"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "2ba41904-402b-4266-8595-5ba58a2caab9", 
+    "name": "Glazing Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "2bcbda3b-623c-4f26-82e3-ca506544e133", 
+    "name": "Actual Height"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "2c63c469-99de-4c39-ac68-a0535aee3a45", 
+    "name": "SPF/HF_Allowable Loads_Roof_125"
+  }, 
+  {
+    "data_type": "Air Flow", 
+    "description": null, 
+    "group": "Mechanical - Flow", 
+    "guid": "2cfaf887-8ec9-4aa2-85af-62413c884f95", 
+    "name": "Actual Supply Air Flow"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "2d18119d-527a-4b03-87b9-7e85ec1dbcfd", 
+    "name": "z Overall Height"
+  }, 
+  {
+    "data_type": "Force", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "2d7be523-88e2-4215-a0bd-456de8813b93", 
+    "name": "Unit Weight"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "2e02ec52-49ad-45dc-bc64-216a2bd47bfe", 
+    "name": "Thickness"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "2e0398c5-bed9-4e2c-95cf-ff3bbb5800a9", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "2e154588-f71b-445c-a67a-76291774e0d1", 
+    "name": "STR_Beam Instance Comments"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "2e594845-a9ac-4b85-9d2b-20b938880958", 
+    "name": "Clearance Top Pattern 2"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "2e835f75-c172-432d-9491-772550eeb5ae", 
+    "name": "Door Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "2ec69171-2ed7-43a5-bee7-c504ed385854", 
+    "name": "Weight Net (Kg)"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "2f10d722-c0bd-47a8-a4d6-9ebeda9e3bfa", 
+    "name": "Fan Type"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "2fc08499-7a97-47d0-974d-c5d5b5a682b0", 
+    "name": "Uniclass 1.4 Code"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "2fc473e2-2d8d-4dc6-82aa-9674c4a7384a", 
+    "name": "Desired Height"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "2fe0a033-ae1e-4e62-9ea9-f08bd99bfe26", 
+    "name": "Interior Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "3007dc62-1aa6-43b2-be46-898df087274b", 
+    "name": "Structural Test Pressure"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "300c019a-75bd-4f0c-97cd-dc884b7353e6", 
+    "name": "Frame"
+  }, 
+  {
+    "data_type": "Temperature", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "30119abb-1162-4912-a265-9adf521da240", 
+    "name": "Cooling Leaving Wet Bulb Temperature"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "30186fba-6520-4b18-835b-81e01e0aacfc", 
+    "name": "z Interior Width"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "30817f29-fef0-4ebd-93a8-1d96a854e16d", 
+    "name": "Clearance Offset Top"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "30a7d6b4-a05d-4199-bc47-d9d39f61e69c", 
+    "name": "Window Type Number"
+  }, 
+  {
+    "data_type": "LoadClassification", 
+    "description": null, 
+    "group": "Electrical - Loads", 
+    "guid": "30ba9056-14e9-4bf4-b79a-3f6295170e03", 
+    "name": "Load Classification"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "30d29d80-23ec-4330-a00a-092f4a0863fc", 
+    "name": "z  Offset"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "31af0276-bbe1-4321-9d54-9370cb9de374", 
+    "name": "Sill"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "31d74378-a295-4143-83c3-4fd7ce282bde", 
+    "name": "bestelnummer"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "3210f3b4-5032-4279-aaab-6554dcf3a600", 
+    "name": "Date Modified"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "32129b88-9f81-47f4-bec2-de9ffbab6cad", 
+    "name": "Product Type"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "324fd26e-2308-4726-8d42-50cff005eb28", 
+    "name": "DF/SP_Allowable Loads_Steel Side Plate Shear_100_10ga"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "32b76dfb-8f25-4588-b632-ea94b39ab0f4", 
+    "name": "Air Leakage"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "33c59d2e-7362-43d3-8791-9922bd913724", 
+    "name": "Model ID"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "33e7a3e2-37b0-449f-a390-3647265c1496", 
+    "name": "Thomas Enterprise Solutions URL"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "34157a47-8599-4403-adfb-24f68ac4701a", 
+    "name": "Actual Height"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "34dd71d2-226d-4a24-9a67-7af4eec01311", 
+    "name": "Fixture Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "3509c8b2-7c08-40c3-b46e-ba8816beee53", 
+    "name": "DF/SP_Allowable Loads_Header_Roof_125"
+  }, 
+  {
+    "data_type": "Frequency", 
+    "description": null, 
+    "group": "Electrical", 
+    "guid": "353f987c-5499-45c3-8ea4-04f509f5c5b9", 
+    "name": "Frequency"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "35c243a3-3bef-483b-a3a0-fbe71287ac29", 
+    "name": "Liquid Connection Offset Right"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "35eda863-4ae6-48fc-8c9b-c90b8b5829ae", 
+    "name": "Product certification"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "361401b4-70fa-42e2-bab4-adb58f1c1601", 
+    "name": "Product group"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "36eb2acc-b3bd-45da-920d-a386ab5526f2", 
+    "name": "DF_Allowable Withdrawal per Thread Penetration_100"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "36f2123f-2fc2-49d0-9672-514bf5b8309f", 
+    "name": "Clearance Back Pattern 3"
+  }, 
+  {
+    "data_type": "Pressure", 
+    "description": null, 
+    "group": "Mechanical - Loads", 
+    "guid": "36f7c2b2-8ccd-4eb5-bb59-1efa3bb77152", 
+    "name": "Total Static Pressure"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "36fa79d9-a5e6-4383-a146-dca64cc09e86", 
+    "name": "Lites Wide"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Green Building Properties", 
+    "guid": "372bcafc-0d5b-4f49-862f-2dceb09bb36c", 
+    "name": "Recycled Content"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "37c70a8a-a21a-4d4b-b7d7-7dafd30b2d7f", 
+    "name": "Tag Width Inches Partial"
+  }, 
+  {
+    "data_type": "Heating Load", 
+    "description": null, 
+    "group": "Mechanical - Loads", 
+    "guid": "37d0209d-d4ad-4422-8959-2967b0323d20", 
+    "name": "Total Heating Capacity"
+  }, 
+  {
+    "data_type": "Flow", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "384a51fa-69f9-4c0a-a744-b6001607c07a", 
+    "name": "Drain Flow"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "3924b55f-7765-4a61-8c50-ba56ca6aac85", 
+    "name": "Refrigerant oil"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "3974f9a6-6019-451c-853f-1853bdcb8f8f", 
+    "name": "Shelf Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "3a2b6f61-a467-4edd-b41b-70af443961a4", 
+    "name": "Allowable Loads_ECCQ_Down"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "3a54f255-a724-4112-b72a-98d5c789d19a", 
+    "name": "Product Page Link URL"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "3ba85fe3-ad9b-4153-947a-9e0e119ebe53", 
+    "name": "z Tub Blend Width 2"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "3c6158c7-d596-4115-8027-3840ce667cb0", 
+    "name": "Manufacturer name"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "3cf63265-7d64-40b5-b587-a633bc71c758", 
+    "name": "Deck Plate"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "3d37befb-a13b-4161-8226-48989064a578", 
+    "name": "Interior Finish"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "3d4816c2-bb85-42a0-83ea-d5e51bdb079e", 
+    "name": "Clearance Left Pattern 1"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Construction", 
+    "guid": "3d660cc7-cd81-4d78-ac69-01b84fbbb58a", 
+    "name": "Has Triple Glazed"
+  }, 
+  {
+    "data_type": "Pipe Size", 
+    "description": null, 
+    "group": "Plumbing", 
+    "guid": "3d7a268a-5abb-4f16-9623-72ffa7d32a51", 
+    "name": "Condensate Drain Connection Diameter"
+  }, 
+  {
+    "data_type": "Temperature", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "3dbef606-8ca1-4c48-a678-38d84262de86", 
+    "name": "Heating Entering Dry Bulb Temperature"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "3e14943c-1af2-4b7f-80da-9889f0b79b06", 
+    "name": "Unit Weight"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "3e8bcc5c-b0c2-4e09-9e32-8069c85af83a", 
+    "name": "Style"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "3ebbaad4-35ea-40b3-ba64-a43c0c6d63b1", 
+    "name": "Panel Width 2"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "40624d4e-635d-4864-ac71-2f787eda185e", 
+    "name": "Clearance Top Pattern 1"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "406aedd6-9297-4f1e-a110-f778e1b729cf", 
+    "name": "Allowable Loads_Uplift PC/EPC_160"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "4118e4d8-1f9f-4a22-b9a3-967d33358981", 
+    "name": "Set Name"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "412c550a-1cae-4542-ac07-3664921d5b2b", 
+    "name": "Muntins Exterior Finish"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Construction", 
+    "guid": "4151979a-aa67-463f-910e-6a5a45e9f973", 
+    "name": "Simpson Bolt Spacing"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "41a4d9e6-3c87-4d07-9bd6-f9a7457a2552", 
+    "name": "Panel Width"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "4215b5c0-69dd-4c31-9ca3-c56062478b4d", 
+    "name": "Gas Connection Offset Bottom"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "4270d63c-3d44-422f-a338-590a6bbe8519", 
+    "name": "Fasteners Each Side_Surfaces_Beam Flange EPC_16d"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "428cf5e3-325f-4767-8c03-78012a703ec5", 
+    "name": "Max. length (BP-IN)"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "430df2f8-5c02-4b05-af98-7db1e4b9826a", 
+    "name": "Room Dimensions"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "4366047c-9784-46ff-bfab-4c446303f938", 
+    "name": "E1996_Large-Missile-Impact"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Mechanical - Loads", 
+    "guid": "43735000-c616-49e4-9bcf-07bedc53f938", 
+    "name": "Nominal Cooling Capacity (Tons)"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "437d7584-014d-4264-a51d-0f0526efa51c", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "43c9bc8e-1ff3-4145-b65e-2fc209fcb49e", 
+    "name": "Fasteners_Beam Flange_10d"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "43fb7778-21ae-4436-8bbf-78b0b7ba7261", 
+    "name": "Interior Frame Color"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "441c985d-9050-4fd5-938f-b295e5428148", 
+    "name": "Date Last Modified"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "443d8a96-abb3-43e6-8d41-d756c57c7784", 
+    "name": "Allowable Loads_CCQ_Down_100"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "4567b202-0b5a-4210-b98a-d6dbbccb686f", 
+    "name": "Visible Light Transmission"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "458cdb6a-1ffe-406b-8223-4d2654ef3968", 
+    "name": "Shelf Width"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "45cd94b7-7db0-4903-b04d-0e134f020d16", 
+    "name": "Fasteners_Beam Flange_16d"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "460d0de1-bbc6-48f4-aedd-8c4cb54c5159", 
+    "name": "Thread Length"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Visibility", 
+    "guid": "46dcf92a-d763-4ccb-ac11-a51abea30868", 
+    "name": "Is CCQ and Straps"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "474b03e8-c0f5-4a5f-976b-f19b30fee99d", 
+    "name": "Prairie Corner Width"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "4786d76b-39f5-41f6-8a44-8915c215d051", 
+    "name": "Unit Length"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "47ffbd64-c8fc-4d56-8fbe-430657d96f7d", 
+    "name": "z Fill Interior Radius Back"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "48504a5a-4ac6-468c-8fb4-de8e556b4dd0", 
+    "name": "z Tub Height"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "48510df6-96d4-4775-a3db-64b8b270879c", 
+    "name": "Fasteners_Carrying Member_Type"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "485c9ed7-d7ef-465c-840e-b01b1658a90a", 
+    "name": "Actual Width"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "487e4ba6-b634-4f5d-9052-122d6d931260", 
+    "name": "Panel Width"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "497c7aa1-f1ed-4831-bfb6-af83179d8bb2", 
+    "name": "Shelf Depth"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "4b0005ff-eb0e-4d2d-9a75-61e17f6d4ec6", 
+    "name": "Clearance Back Pattern 2"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "4b0e537b-2e6c-41fa-8bbd-cb10bb8d0b6c", 
+    "name": "FastenerTypeHosted"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "4b22b11c-c542-467b-a107-1a66e49ae6cf", 
+    "name": "Hardware Olivari Polo L101"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "4b37cf7f-2302-44f4-9bee-b62751bf6ebe", 
+    "name": "Drawings & specifications"
+  }, 
+  {
+    "data_type": "Family type: Casework", 
+    "description": null, 
+    "group": "Construction", 
+    "guid": "4b58c4e5-67cc-43d8-967a-a964ea39f08a", 
+    "name": "Framed Screen Type"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Construction", 
+    "guid": "4b66e54f-8c99-4362-9c95-d2b18e4362ca", 
+    "name": "Exterior Pull"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "4bb069af-e98d-4159-aaeb-dc3a434c0bc5", 
+    "name": "Installation Type"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "4bb860ba-8ab4-4019-8acf-6d7cb19a3af2", 
+    "name": "Egress Window"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "4c2d3d78-cdfb-4a3f-bf37-34d008b9c428", 
+    "name": "Exterior Frame Color"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "4c61c1aa-f4bb-4b98-af4f-46d0512b2dda", 
+    "name": "Folding Handle Color"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "4c630971-6100-47c7-a49c-d96b7f70c5e5", 
+    "name": "Coping Line Length"
+  }, 
+  {
+    "data_type": "Current", 
+    "description": null, 
+    "group": "Electrical - Loads", 
+    "guid": "4cb51377-dc4d-4d9c-ba53-3856aff6ef64", 
+    "name": "Maximum Overcurrent Protection"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "4d3bf527-628a-48c0-97f2-08e525c693a4", 
+    "name": "Allowable Loads_Down_100"
+  }, 
+  {
+    "data_type": "Area", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "4e0e2ddb-6ed0-4929-9ce8-3a4e4c958043", 
+    "name": "Glazing Opening Size SF"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "4e75cb89-a7fd-44c2-98bc-55079fe74515", 
+    "name": "Sill Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "4ecb6a90-3767-4943-925e-40c8c4d85bf8", 
+    "name": "Panel Stile Width"
+  }, 
+  {
+    "data_type": "Air Flow", 
+    "description": null, 
+    "group": "Mechanical - Flow", 
+    "guid": "4f79ce44-e64e-42c3-89bf-b8300f7f1c5c", 
+    "name": "Maximum Air Flow"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "50df797f-bb3a-4034-b3ef-d674ea1caac0", 
+    "name": "Bottom Rail Width"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "50ed9a87-f8b6-41d6-a006-c800aec735dc", 
+    "name": "B2"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "5102b873-5fab-45b7-a2d0-f83ddee8d345", 
+    "name": "Product Name"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "510d99f1-2942-4e10-acfe-d965c213de0d", 
+    "name": "Window Type"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "510efcc1-ddbf-42c6-8e20-d90b81d47657", 
+    "name": "Product Weight"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "516f5332-9a8f-4f2b-ac66-ba20db6f0835", 
+    "name": "Motor output of compressor"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "51859af3-9b16-496c-93b7-ab3b77bca1ca", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "51b6ecac-5e89-45c7-8873-29af503df242", 
+    "name": "Product Line Name"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "General", 
+    "guid": "51ba8e78-a45c-4491-97da-88159bcf2c4a", 
+    "name": "Nominal height"
+  }, 
+  {
+    "data_type": "Temperature", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "51d103ef-fd9b-439a-8f73-ed6439a02a36", 
+    "name": "Heating Entering Wet Bulb Temperature"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Graphics", 
+    "guid": "521a57a9-3ae2-444d-bfbf-9fec52cced91", 
+    "name": "Rectangle"
+  }, 
+  {
+    "data_type": "Air Flow", 
+    "description": null, 
+    "group": "Mechanical - Flow", 
+    "guid": "521d5d79-9948-46b9-86c4-344c86b188b5", 
+    "name": "Design Return Air Flow"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "5246f462-2bc1-457f-8b93-073fcd369362", 
+    "name": "Company_ID"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "5386ce7b-2a9e-46e2-8844-fa3964291aca", 
+    "name": "Number of connectable indoor unit"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "5453c3a1-4f25-42b3-b86a-02e67ad0b298", 
+    "name": "Fan Motor Type"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "547e576b-88a9-4e79-9a06-50b8c6b3260f", 
+    "name": "Custom Frame Depth"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "55259ee7-8055-4bee-83ee-f6049bb9bf2d", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Visibility", 
+    "guid": "55369afc-b108-4529-99d6-5e745e3c5641", 
+    "name": "Is CCQ and Straps Rotated 90"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "5553bdca-4909-4dd3-82da-dc834f1c9ed7", 
+    "name": "TAG 3"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "557d8c77-6dee-4308-b4a9-620049905106", 
+    "name": "IFC Classification"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "561078bf-ddc0-4acc-868d-c63924644a34", 
+    "name": "Frame Depth"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "56b90271-0bcc-4cfe-915f-4d17e571a679", 
+    "name": "Date of publishing"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "572d1cb9-8bf1-46eb-ad89-01ef3c28dbf7", 
+    "name": "Actual Depth"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "57a5a6ba-ec3c-41e4-9da8-84db13833ba6", 
+    "name": "Allowable Loads_Lateral_160"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "597b5adf-c6e8-48ee-9bd3-238b22da7335", 
+    "name": "z Tub Depth"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "5a0955c0-e2fd-417f-bd51-49c0fe61d882", 
+    "name": "Equipment Number"
+  }, 
+  {
+    "data_type": "Family type: Generic Models", 
+    "description": null, 
+    "group": "Construction", 
+    "guid": "5a8cc378-dfe8-4448-9b2e-6d6a2b7a5dd5", 
+    "name": "Grid Type"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "5ab75023-22c5-4551-8a33-ff623d6f424d", 
+    "name": "Fasteners_Carried Member_Quantity"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "General", 
+    "guid": "5b709c88-a636-4fcc-916a-03ab537dc76f", 
+    "name": "Brand url"
+  }, 
+  {
+    "data_type": "Pressure", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "5c0ced57-537d-4c54-9cf3-c9a213d12b19", 
+    "name": "Coil Air Pressure Drop"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "5cb96b07-d3b0-41e4-877e-10a1fdf924be", 
+    "name": "Clearance Back Pattern 1"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "5cc2e68c-867e-4cd5-a9d7-23423115ce70", 
+    "name": "Frame Finish"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "5cf03b1c-c6fb-40eb-970b-32345a2540f7", 
+    "name": "B3"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "5d32399b-ac20-4fdd-b6bb-e92cfd0b3742", 
+    "name": "Copyright"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "5d4febad-59e6-4128-8ebb-691d7420c6c8", 
+    "name": "Fin Width"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "5d59a61d-0adc-439b-9b52-77cc1a6d157a", 
+    "name": "Machine Bolts_Post_5/8"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "5d653cd1-b281-45bc-8d9b-7952dbd529ec", 
+    "name": "Panel Top Rail Width"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "5e22ff20-cec4-4ef2-95b9-d657a78adbf9", 
+    "name": "Handing"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "5fa81831-2acc-4dbb-9068-d09ed401e9b3", 
+    "name": "Actual Number of Treads"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "5fee908c-496e-4e5c-a961-ebb68b3ca2c7", 
+    "name": "Fasteners_Carrying Member_Quantity"
+  }, 
+  {
+    "data_type": "Area", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "60066619-9e1f-4319-8806-7715934127c6", 
+    "name": "Daylight Area"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "60363d50-27cf-4ee5-a96f-3535f6fa0009", 
+    "name": "Product family"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "603bdd54-8f12-4912-9d48-51e15ebf3939", 
+    "name": "Glass Type"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "6056ac00-5cb2-4d7e-b1ec-bb884a595f6f", 
+    "name": "Projection"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "60d7575f-7cae-4406-b521-22261f2de624", 
+    "name": "Hardware Finish"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "60e6f4c7-0311-4704-8af1-f0c0fe8bf901", 
+    "name": "Sash Overall Width"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "60f297cd-7699-42c3-8560-efed349416f6", 
+    "name": "Bolt Pitch Width"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "60f37bd2-6488-4a2f-923b-345f37d8315c", 
+    "name": "Handle Finish Shared"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "612da9cc-8a2a-4075-a4a5-47b6000ea1ec", 
+    "name": "Warranty"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "62031c7f-09cf-42a4-9b56-634f11b8112a", 
+    "name": "Overall Depth"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "623a94dc-5a35-434c-8391-9748b5aa9d3c", 
+    "name": "Copyright ©"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "62c2de11-1109-4cc2-9613-62ab54e3df00", 
+    "name": "Stile"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "6326b083-5418-4e0c-acb0-96998d6975f3", 
+    "name": "Date Created"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "63a95292-bb84-4192-a00b-64452040ca6a", 
+    "name": "Fasteners_Joist_Type"
+  }, 
+  {
+    "data_type": "Volume", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "63c7b3f1-250c-4b78-8518-11a22d89fb5f", 
+    "name": "Earthwork Net (Cut/Fill)"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "640916ef-11a9-4206-b77d-c52c17f2de4b", 
+    "name": "Building Codes"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Graphics", 
+    "guid": "640db400-dfe2-4fee-ba58-69737f0b57af", 
+    "name": "Square"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Construction", 
+    "guid": "6439d457-aef7-48c0-82e6-1d22d3aacb18", 
+    "name": "Simpson Fastener Type"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "645ae6e8-f7ee-4e69-bab7-44581d144da8", 
+    "name": "Air Leakage"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "654907c5-55d1-454f-bf2c-7d3e7f2b48bb", 
+    "name": "Frame Type"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "665571c9-a858-4b27-8769-de7efd2e473a", 
+    "name": "Product Guid"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "66928473-03aa-4362-9686-3003e328dcd6", 
+    "name": "Uniclass 2.0 Code"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "669bd208-037e-4a85-9b43-b68860210c94", 
+    "name": "SPF/HF_Allowable Loads_Snow_115"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "66a742af-ad5a-4015-96ab-77ecf73fbf0c", 
+    "name": "Technical description"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "66b0a0d5-c457-415e-a9a9-a308a29fc0d7", 
+    "name": "E331_Water Penetration"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "66ccc1bb-4602-4240-bd7e-aab745eecae2", 
+    "name": "Custom Frame Depth Desired"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "6722bb9b-a15c-4f43-a122-bddf0911847e", 
+    "name": "Allowable Loads_Uplift_160"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "67d96b7a-0561-4ad8-b178-94cba556429f", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "67e77658-de1e-46d4-98d8-6c611d516592", 
+    "name": "DF/SP_Allowable Loads_Steel Side Plate Shear_100_10ga or Greater"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "68377708-c08e-47ca-91ba-29345ee614a0", 
+    "name": "Door Frame"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "68c95829-037f-4908-a6e1-32c6a3a4874d", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "6934d4c1-9401-46f2-8332-aa066e1b24aa", 
+    "name": "Installation_Fabricaton"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "69522824-b525-4135-9cf9-280611e487bf", 
+    "name": "Liquid Connection Radius"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "General", 
+    "guid": "69648f0d-f592-413a-8bd7-f5790e8db78d", 
+    "name": "Edition number"
+  }, 
+  {
+    "data_type": "Number of Poles", 
+    "description": null, 
+    "group": "Electrical", 
+    "guid": "697795fb-88ee-4cc9-93e4-e363ae8be74b", 
+    "name": "Phase"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "697a4440-1f82-4c4f-8400-d93eaec73340", 
+    "name": "Ladder Dimension"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "69a0eff2-a817-416d-9f90-d8bdfd5bcd26", 
+    "name": "Structural Role"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "69bbe648-b1ac-419c-aec7-de9be9dffd6b", 
+    "name": "artikelnummer"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "69cde874-3ec9-42d7-b818-124aff8bbf9f", 
+    "name": "Door Frame Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "69cf2b58-bb40-4348-b67b-9c8fee4dd225", 
+    "name": "TAG 1"
+  }, 
+  {
+    "data_type": "Family type: Doors", 
+    "description": null, 
+    "group": "Construction", 
+    "guid": "6af2aea0-c6fb-42c9-a4ce-b6e42218057e", 
+    "name": "Threshold Type"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "6b3d7a4b-d96f-46d0-a43f-837c81863b68", 
+    "name": "z Offset"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "6b632fce-667c-4854-a7df-059a85823de1", 
+    "name": "DF/SP_Allowable Loads_Header_Snow_115"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "6ba16269-9405-4b3e-9e5a-80d30b6757e6", 
+    "name": "z Drain Placement"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "6bae48f9-c17f-48b8-9a0e-eccf9fdf1fd4", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "6bc95036-5975-469e-9be3-abd2d2409e6d", 
+    "name": "z End Radius"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "6cb58140-4bf5-4938-827f-a585b543cdbe", 
+    "name": "Revision"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "6cce5cd9-ab1f-41fa-a00c-09b962b650bb", 
+    "name": "Clearance Front Pattern 1"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "6d3b7b08-3a6e-4f4a-9c88-aebb6b7fbdb9", 
+    "name": "Nominal Length"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "6d48b71a-9eef-4e1a-8993-ff0430496e32", 
+    "name": "Desired Box Depth"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "6d59d4fc-a413-4b4c-bb55-292d4ee5c276", 
+    "name": "Product SKU"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "6da17127-4650-4d0e-9c0c-31fd580a5bb1", 
+    "name": "ADA Conformance"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "6dcccc49-5d4f-4c28-a2a6-55cedd0bd8ff", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "6dd7211c-4ef0-401a-81d2-9b67a1f8755a", 
+    "name": "Fan Drive"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "6de4ce22-1ebb-4623-b807-a7af97cd9f8b", 
+    "name": "Model Disclaimer"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "6e99c9ef-f88a-45dc-9e09-d5217fa2ef37", 
+    "name": "Allowable Joist Depth Below_Double Bottom Plate_Max"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "6ec7f624-f240-4d2d-a918-a0c659794f2a", 
+    "name": "Product Name"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "6f0fa50d-6e31-4599-889e-a4a7132193d4", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "6ff2afaa-a32e-4193-b15c-5f9689b54f9c", 
+    "name": "Frame"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "6ffefa45-2f88-46f5-ab34-b653d6a90d0e", 
+    "name": "Nominal Width"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "70455e6f-8668-42bc-9b9b-3d01e364e8c2", 
+    "name": "Width"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "7049b75a-184c-4f03-9121-8d3b3197491a", 
+    "name": "U-Factor"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "704febdf-e259-4af0-8111-90bdadff2aad", 
+    "name": "_visiblefront"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Visibility", 
+    "guid": "71ad29e5-56fe-43fd-9b14-0f2d0ae56ec0", 
+    "name": "Fasteners_CCO4_Control"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "71b2001d-d9de-4e66-aa67-42b1e0d70b1d", 
+    "name": "B5"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "7213bec1-607a-4e72-a2ba-6c176be82fce", 
+    "name": "Fan type"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "726472d2-a55c-4414-b7dd-6342363542da", 
+    "name": "Crankcase heater of Compressor"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "726ffacc-7f17-4485-84c7-e0fd96b6d971", 
+    "name": "Depth"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "72e9dc0b-df19-45f0-bae8-2b2bc5e5ff7e", 
+    "name": "DF/SP_Allowable Loads_Steel Side Plate Shear_100_14ga & 12ga"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "7328abd9-6ff8-4950-b8fc-9fe0920355e5", 
+    "name": "Top Extra Rough Height"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "73688668-7c06-4954-8931-cd9ba457999c", 
+    "name": "_visibleright"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "7376a9ed-a426-4cd1-a84d-524d7faee9aa", 
+    "name": "Frame Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "7407572b-0f8c-4e7a-a526-08f5dc0946e1", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Area", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "74b1142d-1fae-4be5-b45f-43329c8998c4", 
+    "name": "A"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "74b2b93e-4055-4974-84e6-f08de1a1be70", 
+    "name": "Door Frame Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "752de7c3-461d-4ae8-8893-15945eea6e9f", 
+    "name": "z Profile Depth"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "754e8b85-a46c-495d-8318-a75be615c1b0", 
+    "name": "Original Creation Date"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "75dde55a-e5e5-4bbe-bf60-b6764d6868e9", 
+    "name": "Novotny temp parameter Integer"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "75dee4a5-af77-4371-ac43-89c45df6be79", 
+    "name": "Flashing Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "76078b2a-cc8e-4ce5-9c3a-8d19eab3d7d5", 
+    "name": "Masterformat 2014 Code"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "768e9eda-b413-48f6-b80d-812cdfea7b7d", 
+    "name": "Collar"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "76ace72e-cd01-4a63-b704-7511b47ff03c", 
+    "name": "Connection pipe Method"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "76c3739a-a466-43a6-b343-b04a5c8f773e", 
+    "name": "U Value"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "76e514ab-55d9-4d8d-a442-f4bab3bfefa4", 
+    "name": "SP_Allowable Loads_Floor_100"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "7721996e-54fb-4d7a-b158-f303403b8b5a", 
+    "name": "Catalog"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "772a9078-fba3-4a10-be87-7d908637dd5c", 
+    "name": "Door Glazing"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "773bccdd-871c-479b-851f-672a9a11403c", 
+    "name": "Count"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "778db075-535b-43b7-a35b-0df8c8844e67", 
+    "name": "Fastener Beam"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "77cc3558-7716-41e0-a71b-ff0cd32ed990", 
+    "name": "K"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "783766ba-e143-4918-828d-ed31ddc553d3", 
+    "name": "SP_Allowable Loads_Snow_115"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "78ed221e-c0fe-48fa-beb6-34e87f8a5cd5", 
+    "name": "Fan Grill Height"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "7905addb-5882-40cc-bfdd-ee413354848a", 
+    "name": "Model Disclaimer"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "79a7070d-4c41-40a6-b827-d4fa4dfa41e0", 
+    "name": "B"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "7a36e053-33ae-49f9-8c5d-d8c7eea4264f", 
+    "name": "Max Width"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "7a3cd6ca-917a-4a21-979a-27fa80d89d10", 
+    "name": "Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "7af6066b-00ef-449d-bc12-a70583c5bd01", 
+    "name": "Copyright"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "7b31c935-6457-4e45-a5fb-987dbde8d10a", 
+    "name": "Provide Feedback"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "7b3932a6-7827-4b0b-95c3-a286300aef91", 
+    "name": "Leg Height"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "7b6a3b5b-3271-4867-8137-90297552a1ff", 
+    "name": "Panel Width 2"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Visibility", 
+    "guid": "7bafbbe2-9354-41e7-830b-66085eba972b", 
+    "name": "Is CC and Straps"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "7bc6568d-458d-4784-b72d-a815812f3dc1", 
+    "name": "Fin Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "7bf3ed7b-f388-44b9-a8d0-8efe0e6837c7", 
+    "name": "Material main"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "7bf47def-e11a-4019-b91f-51af4a27acbb", 
+    "name": "Power Connection Offset Bottom"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "7bfe5e6e-16e8-456d-a39f-739fa19b80af", 
+    "name": "Steps Array"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "7c2a0b35-b85a-42b8-aab5-aa9a7fb72adb", 
+    "name": "Equipment Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "7c4b6875-dcf4-422e-9d56-ce138575c69d", 
+    "name": "DF/SP_Allowable Loads_Header_Uplift_160"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "7c8cd16f-69b4-4a53-8920-a3829bf72f45", 
+    "name": "SPF/HF_Allowable Loads_Header_Floor_100"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Electrical - Loads", 
+    "guid": "7cd43677-4381-41b8-a090-433b026987f4", 
+    "name": "Voltage"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "7d3692cc-cf43-4f60-a11c-78b44bd7135d", 
+    "name": "Bottom Extra Rough Height"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "7db63dfc-34c9-4c16-b00b-d6e02fe1c9f9", 
+    "name": "Clearance Bottom Pattern 3"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Construction", 
+    "guid": "7e2fe15f-3fc8-4597-92f1-4057ca6b0c8d", 
+    "name": "Include Screen"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "7e921549-c7d0-486d-b67e-341644a0314b", 
+    "name": "Capacity"
+  }, 
+  {
+    "data_type": "Cooling Load", 
+    "description": null, 
+    "group": "Mechanical - Loads", 
+    "guid": "7e9d6a1c-f3b6-4692-8774-5b877eecb068", 
+    "name": "Sensible Cooling Capacity"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "7eb772b8-506a-421c-bc83-a9d0851135c1", 
+    "name": "Fasteners_Post Flange_Quantity"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "7ec27d26-cb37-46e8-91b3-3edb8f019836", 
+    "name": "Condensation Resistance Factor (CRF)"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "7f42e97c-00a5-40f7-a3bf-6586f71a13c7", 
+    "name": "Youtube clip"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "7fa00fab-e278-435b-bdf4-4a4e5b73eb11", 
+    "name": "Door Slab Material"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "802909d9-2f35-422f-b9fd-fde09ea66b62", 
+    "name": "URL - Product"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "8037a16e-e932-4202-9727-af04ce1e38aa", 
+    "name": "Sound pressure level_Heating"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "8047c828-5143-4d04-b658-babbb750b5ef", 
+    "name": "Fasteners Each Side_Surfaces_Beam Flange PC_16d"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "8088dea3-fa55-465f-924c-9111e06150ca", 
+    "name": "Clearance Left Pattern 3"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "80ae36ff-4840-4677-a758-82edd074a60e", 
+    "name": "Size"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "810d0589-f7d4-4808-b606-afe0f8f08bf8", 
+    "name": "Product url"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "8152a668-0af3-4760-9348-ea4c3f359635", 
+    "name": "Refrigerant Used"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "81a45ca1-79e7-492c-879e-69d7b0f8f2ea", 
+    "name": "Air Infiltration"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "81df5780-8177-4585-a194-4063f06fc87c", 
+    "name": "Power Connection Protrusion"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "81fba439-8d47-45c5-9c57-cbef8e8547fd", 
+    "name": "Sort Level 1"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "82b85bc3-fef2-41ff-98be-a7fee36b37d4", 
+    "name": "Clearance Right Pattern 1"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "82e69cea-8477-4b57-9e32-dcc3fbeeb574", 
+    "name": "z Type Color"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "83dd35ef-45cb-463f-a9b1-ae5b8ba1a4e8", 
+    "name": "Clearance Top Pattern 3"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "843bdf10-6b35-49a8-b037-8af2c8f5a6cf", 
+    "name": "Clearance Offset Bottom"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "854c2e09-53d6-4f72-8dd4-2074d9bff0cc", 
+    "name": "Allowable Loads_Lateral_EPC_160"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "85716c81-5206-4beb-971c-50839adcab8a", 
+    "name": "Connectable indoor unit type"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "8578d494-1a0e-4458-819a-b3411e1f42a9", 
+    "name": "Fin Thickness"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "85b81e19-8c09-4dfb-b604-cba220f1c0b0", 
+    "name": "Hardware Bradford"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "85d16c33-ac29-4262-9f55-29d0a27af0c3", 
+    "name": "Part Number"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "861ccf28-d6d2-48e9-81e4-821b71a6219a", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "867da969-2235-46e2-8cab-62b6d3c7b2ac", 
+    "name": "SPF/HF_Allowable Loads_Header_Roof_125"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "867e040e-906f-46f9-a149-89c0563e3b92", 
+    "name": "Body"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "869ebbd7-25e6-4044-bc4c-967f0e269c3f", 
+    "name": "E547_Water-Resistance"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Electrical - Loads", 
+    "guid": "86bb97de-6a86-469e-adbc-1b7bd724f085", 
+    "name": "Rated Input Power_Cooling"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "86c8e0ba-f6c8-4bb3-a3cf-7ab994604208", 
+    "name": "Material secondary"
+  }, 
+  {
+    "data_type": "Number of Poles", 
+    "description": null, 
+    "group": "Electrical", 
+    "guid": "87ea06de-740f-40d8-9c8a-fdffd71e5e4c", 
+    "name": "Phase"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "87ec647e-da75-42f7-aff8-ebf0e2af79fb", 
+    "name": "Lite Cut HV Grid"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "8913b33d-b8d1-4e1b-a5e4-52acf2f88e20", 
+    "name": "Height"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "891545cf-43cd-4b5c-b003-e4cb506f57d9", 
+    "name": "Fasteners_Header_Quantity"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "891cca24-3c4a-45e8-8857-6483f35526ce", 
+    "name": "Allowable Joist Depth Below_Double Bottom Plate_Min"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "894d6441-60fa-4aa7-a2a8-fa4d37aa411c", 
+    "name": "Glass Type"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "895ddb0d-6098-42d1-8167-4b1e021de954", 
+    "name": "Energy Efficiency Rating"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "89bcfede-d7ec-4027-9873-0da271085834", 
+    "name": "Egress Info"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "89e1a892-5b84-4b0f-963d-e11dc970c551", 
+    "name": "Standards Conformance"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "89e6de7c-2257-45eb-a103-f760934a6b2a", 
+    "name": "Metal Gauge"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "8a2a5ab7-5e3f-4557-b878-f7e3d23caec2", 
+    "name": "Allowable Loads_ECCQ_Uplift"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "8ab21908-56f6-4172-8198-cc2f46f75099", 
+    "name": "Roof Slope"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "8b434221-b246-43cc-9128-6d4b896de17f", 
+    "name": "Refrigerant Charge"
+  }, 
+  {
+    "data_type": "Temperature", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "8b8ec2cb-f268-49d1-9fda-534b91e54583", 
+    "name": "Heating Leaving Wet Bulb Temperature"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "8c4ac57f-a05e-445c-9794-7f70950401e3", 
+    "name": "O"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "8c878add-409e-419a-9a99-30aeec4a03c0", 
+    "name": "Clearance Front Pattern 2"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "8d39374f-f5a6-495b-ac9e-c461f589077a", 
+    "name": "Compressor Type"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "8d6291c5-5fc3-4d18-9617-214029ac7d48", 
+    "name": "OmniClass Code"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "8daa79c2-41cd-4977-a374-89dcec2a69c7", 
+    "name": "OITC"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "8dbd88be-c71d-480f-8aa6-d5fce7e002c3", 
+    "name": "Interior Trim Finish"
+  }, 
+  {
+    "data_type": "Pipe Size", 
+    "description": null, 
+    "group": "Plumbing", 
+    "guid": "8ddd76a0-f610-4ff0-8550-4b95d0c3e311", 
+    "name": "Refrigerant Liquid Connection Diameter"
+  }, 
+  {
+    "data_type": "Pressure", 
+    "description": null, 
+    "group": "Mechanical - Loads", 
+    "guid": "8e06115c-0ce4-4fc9-b4c3-e19f47ccfc52", 
+    "name": "Supply Air Pressure Drop"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "8e2c0561-f6a9-4f6a-be90-300ab8201ffb", 
+    "name": "Base Finish"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "8ec64e52-8f77-4332-b2b0-96f8e906df75", 
+    "name": "Gas Connection Radius"
+  }, 
+  {
+    "data_type": "Force", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "8ed442ca-c809-497c-93b3-c50b57115d3d", 
+    "name": "Refrigerant Charge"
+  }, 
+  {
+    "data_type": "Electrical Potential", 
+    "description": null, 
+    "group": "Electrical", 
+    "guid": "8f11a0ff-9620-415f-a298-06e94422da2d", 
+    "name": "Voltage"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "8f1abaee-48e1-422c-8e49-474ded97670f", 
+    "name": "5\" Flanges"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "8f1c5f19-5c3d-4fd6-99ac-f4c58cdefd75", 
+    "name": "z Tub Width"
+  }, 
+  {
+    "data_type": "Temperature", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "8f224f61-3399-4837-bf64-200445f5579b", 
+    "name": "Cooling Entering Wet Bulb Temperature"
+  }, 
+  {
+    "data_type": "Angle", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "8f404da0-0373-4226-861d-fbd5c3ce5225", 
+    "name": "Novotny temp parameter Angle"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "8f6f6ccc-ca2a-4af0-af0c-0e359c6cf984", 
+    "name": "code_EAN"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "9033a781-f44d-4548-864f-d8c1a0b7e96c", 
+    "name": "Hardware FSB 3750"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "90eaa739-cbc3-4a3b-9286-48dee1cda921", 
+    "name": "Box Depth"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "91eb0c26-b6de-4586-ba2a-fb8778eaa94f", 
+    "name": "Liquid Connection Diameter"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "9256ea49-56f2-4688-9461-3f476a820c91", 
+    "name": "Panel Width"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "9288ccdb-0d15-4c1b-801a-a8c91c6f5208", 
+    "name": "Lites High"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "93064066-6cfc-4f1b-afc6-b827bc44c08a", 
+    "name": "Clearance Offset Left"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "93e86909-bde6-4ab6-93e5-bc6fb05fb638", 
+    "name": "SPF/HF_Allowable Loads_Steel Side Plate Shear_100_10ga or Greater"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "94042694-b7a2-4057-9805-aa019bafa199", 
+    "name": "R-Value"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Construction", 
+    "guid": "94704ab1-c93e-46be-beb7-9441c23e2e3c", 
+    "name": "Approximated Horizontal Grid Spacing"
+  }, 
+  {
+    "data_type": "Cooling Load", 
+    "description": null, 
+    "group": "Mechanical - Loads", 
+    "guid": "94769bc1-9237-4b9a-87eb-b6bf6a6b0e9e", 
+    "name": "Latent Cooling Capacity"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "9505c57d-1d3f-4cf6-8a96-78b3b506c122", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "9506dc6a-b94e-4362-b8bf-44df8c69971d", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "95309364-9e72-4630-8798-be3742e2656d", 
+    "name": "Sash Height"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "95bfa594-d329-4b6e-8e4e-3a1bdc8b1967", 
+    "name": "Ceiling Height"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "96dab5d8-674d-4023-a317-a5dc5f2cf0ee", 
+    "name": "z Type"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "96fd33f7-9488-44d5-8f6b-03800a402d8c", 
+    "name": "Clearance Bottom Pattern 1"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "97198f29-e4bb-4128-9e3d-453d66d4f7fc", 
+    "name": "Water Penetration"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "97a1cb8f-d4b3-4ecf-bd3b-ebffc980ef19", 
+    "name": "Post_SDS1/4x2 1/2 Screws"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "97cbf76a-bc47-4226-a9bc-8d9f04f1ca11", 
+    "name": "SPF/HF_Allowable Loads_Header_Uplift_160"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "9804b8c4-ef3f-4427-8c90-cb5b288ca09f", 
+    "name": "Unit Depth"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "9836ae53-3a1e-4246-a93a-3ae4ddd77382", 
+    "name": "Gas Connection  Offset Right"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "986710da-0f6e-447f-9c9e-9a43ce5c13a7", 
+    "name": "Clearance Offset Bottom"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "98affdf3-d134-4bf2-8c3a-3eef2e2b1560", 
+    "name": "Clearance Offset Left"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "99b65de8-6235-427e-a43a-f5eca2cac930", 
+    "name": "DF_Allowable Loads_Roof_125"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "99bf3be8-77f2-4b74-8622-d94a8244527c", 
+    "name": "Clearance Offset Back"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "9a01ec26-b323-4f9d-b2b1-a4bc6c58dbfe", 
+    "name": "Max. height difference between Indoor Units"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "9a3a2385-4484-4d50-8388-5a66cda98053", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "9b0af1cb-e9b6-44b4-bd9a-1bc6ab9f773b", 
+    "name": "Muntins Interior Material"
+  }, 
+  {
+    "data_type": "Family type: Generic Models", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "9b8959f2-dea8-47af-a293-caaf0ed024f1", 
+    "name": "Glazing"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "9b97517d-ec57-4b51-8163-eed311ab5de5", 
+    "name": "DF_Allowable Loads_Snow_115"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "9bbb74b0-71f0-4c35-8cf5-b617a20cc910", 
+    "name": "Sill Material"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "9c3788e3-87d5-418a-adff-50d97198788e", 
+    "name": "Panel Material"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "9c51653e-0aa7-440a-acd7-d562faff4fab", 
+    "name": "Armpads"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "9c719be0-1033-42a0-a3b7-653bb0772add", 
+    "name": "Clearance Offset Front"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "9cad7191-d4ee-4066-8e78-83f32b1bbba7", 
+    "name": "Prairie Lite Size"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "9cc1fb8c-ba88-46ba-8be0-10efd3a01ed3", 
+    "name": "Placemaker Options"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "9d950078-c220-4741-838d-ac1580980ec3", 
+    "name": "z Fill Width"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "9d9bf690-c0d9-4635-b972-9abee606d33b", 
+    "name": "Clearance Pattern 1 2 or 3"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Graphics", 
+    "guid": "9dab28a3-bbd2-4694-b003-da75a24bf81a", 
+    "name": "Top View"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "9dcb73b3-ec2c-4f80-835b-4046278e4047", 
+    "name": "Code Reference"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "9e4932dc-00a4-445d-b1f9-e8f500d1b0b6", 
+    "name": "Manufacturer country"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "9e7cf084-692c-4f50-b91e-5cb8d645be72", 
+    "name": "Fasteners_Header_Type"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "9eb9e9fd-0ef6-496e-a882-42e3f9ce2458", 
+    "name": "Glide Finish"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Electrical - Loads", 
+    "guid": "9ed8c7d7-454c-457e-b137-cf05336df7fd", 
+    "name": "Fixture Wattage"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "9edb9d33-94e0-42ba-8535-7500fac22eff", 
+    "name": "Region Antarctica"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "9f9c887c-d9a5-4536-94ac-88f864eeb66e", 
+    "name": "Earthwork error message"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "9ffa1462-b695-404c-9abd-3c2f51d5d416", 
+    "name": "Ladder Width"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "a01f3cea-e955-4de6-9fbf-eef85b49bc2c", 
+    "name": "Bolts_Beam_SDS1/4x2 1/2 Screws"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "a028a9d6-4a13-4f9d-884c-400fa1906bbb", 
+    "name": "Allowable Joist Depth Below_Single Bottom Plate_Min"
+  }, 
+  {
+    "data_type": "Current", 
+    "description": null, 
+    "group": "Electrical - Loads", 
+    "guid": "a0390ec1-1997-46f8-a163-c13b056f01d0", 
+    "name": "Minimum Circuit Amps"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "a05dc65b-9763-4199-b0fe-d773bd5dcc92", 
+    "name": "D"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "a0922282-5b33-4dfb-9362-a29f945b2062", 
+    "name": "Frame Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "a095dafe-e8f4-4ecb-a62c-e5b51e41acbd", 
+    "name": "Active Panel"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "a15aa8fe-fac2-4258-82ff-6ce294c34eae", 
+    "name": "Door Panel Type"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "a1b210cc-a076-43a7-a3f5-1cdb3129eeb2", 
+    "name": "Clearance Offset Right"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "a1d19198-cd55-449f-a930-281d78d8f48c", 
+    "name": "Family Version"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "a2eef903-c2bd-4d7f-9075-450374459eb3", 
+    "name": "A"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "a31d427b-b790-436a-99ac-ed7876862ff8", 
+    "name": "Sill"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "a32868a4-ad8d-40f5-8af9-1d0abd6aed41", 
+    "name": "Panel Height"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "a33076e0-606e-4669-9259-61ab6f918ede", 
+    "name": "Nominal Height"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "a33af543-3cb7-4027-89d3-4fffcfeca6ee", 
+    "name": "Design Pressure"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "a348ca1e-5154-4f3f-b615-a0156355d814", 
+    "name": "Sort Level 2"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "a3bb9abf-c324-4a46-94de-e5d413c99640", 
+    "name": "Height"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "a4043dc9-ac1b-4db2-8376-9a3d98987ed3", 
+    "name": "Steps Array C"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "a435d266-f985-4ab8-a100-39c3def56062", 
+    "name": "Glazing Thickness"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "a4ac9fa4-55a1-4e5b-9983-fe2aaa59c3b4", 
+    "name": "Tag Height Inches Partial"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "a684747c-3ae7-4009-bb53-4f0720f62e38", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Mechanical - Loads", 
+    "guid": "a6c101bd-89f2-4442-9b58-5f7ce4c44ddd", 
+    "name": "Rated Heating Capacity"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "a7273b85-a613-4a16-abdf-0fee2c432310", 
+    "name": "DF/SP Allowable Loads_Down_100"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "a75afd1b-a1f0-4e1a-b2a3-55e35a3ea6f0", 
+    "name": "Shaft"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "a77a8e08-00d2-4d99-b0fb-3c949c0f498c", 
+    "name": "Panel Bottom Rail Width"
+  }, 
+  {
+    "data_type": "Cooling Load", 
+    "description": null, 
+    "group": "Mechanical - Loads", 
+    "guid": "a7d41a3f-8280-456e-a6bf-2c88f67df231", 
+    "name": "Total Cooling Capacity"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "a7e7ee40-d24f-4355-a63c-b4dc877d7966", 
+    "name": "Finish"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "a8030d31-778d-4046-a2cf-e23fbb48b88e", 
+    "name": "Material"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "a81b238d-e7f7-4e64-9e72-337d8cfae389", 
+    "name": "Right View"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "a93ef085-b3ea-4154-9f1a-6937aa547329", 
+    "name": "Glazing"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "a96dc631-6130-4398-b378-f108d152b962", 
+    "name": "Fasteners_Beam Flange_Quantity"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "a97c5f78-13b3-4cc9-8ca8-cb69273f5bd8", 
+    "name": "Glazing"
+  }, 
+  {
+    "data_type": "Air Flow", 
+    "description": null, 
+    "group": "Mechanical - Flow", 
+    "guid": "a9ea7e31-b5a8-41fd-b9d4-6f721155f977", 
+    "name": "Airflow rate_Cooling"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "aa634fbd-1a84-4967-945a-4cf15c250032", 
+    "name": "Visible Light Transmission"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "aa8f2295-1384-4170-8f51-1e73b33721ca", 
+    "name": "Overall Width"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "aa9bf4ff-be4a-4b06-8b42-e7e56b753356", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Pipe Size", 
+    "description": null, 
+    "group": "Plumbing", 
+    "guid": "aad7c100-5cd6-46de-a224-3bb04707986a", 
+    "name": "Refrigerant Suction Gas Connection Diameter"
+  }, 
+  {
+    "data_type": "Temperature", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "ab9bb6b8-60d4-4e34-9270-2c26aeeb600d", 
+    "name": "Cooling Entering Dry Bulb Temperature"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "ac024c65-5957-4832-ab7b-0acda031c962", 
+    "name": "Door Thickness"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "aca4cc59-8d71-4c81-b1fa-4d34bc8d2c82", 
+    "name": "Uniclass 2.0 Description"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "acd417c0-b77d-440b-af55-006bc9dd997a", 
+    "name": "Omniclass Title"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Construction", 
+    "guid": "ace7ebae-73ad-48d3-9d22-808f9375437d", 
+    "name": "Approximated Vertical Grid Spacing"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "ad6c2040-83d5-4f0d-9cb5-b2c94552e740", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "ad9d0eac-2792-49b6-a58a-27c48b465af5", 
+    "name": "leverancier"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "ae282076-9a74-42d6-abe3-e6d5c438fb9c", 
+    "name": "Mounting Height"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "aea99626-f6bc-472d-951c-8e25958588d3", 
+    "name": "Series"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Electrical", 
+    "guid": "aef92dbf-0729-41ca-95be-06821ff6e1d6", 
+    "name": "Voltage Comments"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "afcec02d-b45e-4076-ac4e-6fe76abdf314", 
+    "name": "Nominal Height"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "afda7871-edc4-498e-ae6a-0a42a945b512", 
+    "name": "Model ID"
+  }, 
+  {
+    "data_type": "Air Flow", 
+    "description": null, 
+    "group": "Mechanical - Flow", 
+    "guid": "b042febc-cd47-4a9e-9066-bb529e095df8", 
+    "name": "Airflow rate_Heating"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "b06f6c1e-3c57-4878-b85d-c2b2f81f0aa9", 
+    "name": "Body Gauge"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "b099ddd5-e920-44a2-82bb-678198d0dd8c", 
+    "name": "Calculate Earthwork"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "b0ec8bc1-9fbc-4383-a9bf-86e9cb435840", 
+    "name": "Forced Entry Rating"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "b1237d40-597d-4a37-b76f-a0879292c330", 
+    "name": "Wattage"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "b1639303-bd04-464b-b8de-81ea6af7e2d3", 
+    "name": "G"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "b1d89e20-a505-4c81-b9fa-c33ca1ffe359", 
+    "name": "Actual Width"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "b1e81b8a-d25a-4025-a066-a7d679fa460e", 
+    "name": "_visibletop"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "b241a6fa-2aed-4690-99bf-59e47c816e1b", 
+    "name": "Jamb Type"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "b269baa1-fc71-4ef6-9688-380f971b5793", 
+    "name": "Fasteners_Post Flange_10d"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "b2b5a0e3-1b20-4cb3-8eaa-b4282634cfc4", 
+    "name": "J"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Green Building Properties", 
+    "guid": "b3b765a9-44bf-4074-8b86-1251fc0e40cf", 
+    "name": "Sustainability Info"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "b40498ea-cf45-4ccb-8748-250120685847", 
+    "name": "SR View Calculation Settings"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "b4941df0-6c30-48b4-b2ba-d098a864bf49", 
+    "name": "Copyright"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "b4bf28d2-d6f0-4b88-9e62-92a1f676aba8", 
+    "name": "Sash Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "b4ea79ae-c105-4ba4-a04c-d39d79a064ca", 
+    "name": "Sound pressure level_Cooling"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "b4f91d65-8a04-47e7-89e7-40750afa8f43", 
+    "name": "Family Version"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "b65d69c3-68f3-49b1-96d0-00c56af39251", 
+    "name": "Fin Length"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "b6999786-a5a3-4ff4-95fa-745f14d28964", 
+    "name": "z Fill Depth"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "b6bc89a8-48d3-48c7-bcba-f99639269a17", 
+    "name": "Refrigerant Used"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "b74dea3e-6ada-47fd-aba9-3cdcdb4f4ded", 
+    "name": "z Overall Depth"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "b7d18137-8b70-4057-b1e0-82cd4c1a9b87", 
+    "name": "SPF/HF_Allowable Loads_Floor_100"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "b7ea709b-82f8-4983-8c30-c5388179cd2c", 
+    "name": "Lite Cut Grid"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "b87fbda9-36c6-4cd0-803d-26ca21d8c95b", 
+    "name": "NBS Reference Code"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "b95932fd-e43c-4431-8c25-7133043b8cdb", 
+    "name": "Cladding Finish"
+  }, 
+  {
+    "data_type": "Number of Poles", 
+    "description": null, 
+    "group": "Electrical", 
+    "guid": "b9bfee5f-9825-44d0-9383-3f106e188aec", 
+    "name": "Number of Poles"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "ba090282-fa8b-4f0d-90a8-62d0766f9cb6", 
+    "name": "DF_Allowable Loads_Wind_160"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "ba190a76-c432-4767-9bee-3c8ec69cfc93", 
+    "name": "E330_Structural-Test-Pressure"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "ba7e806d-def2-429b-a5c3-66a9ea4c24b8", 
+    "name": "Fasteners_Carried Member_Type"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Green Building Properties", 
+    "guid": "bab5f244-0fa6-4969-b31a-915506e8a30c", 
+    "name": "Green Building LEED"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "bb51632f-ca09-491b-874c-90e5e02c0089", 
+    "name": "Novotny temp parameter Length"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "bb523fd3-c0df-4bac-8a11-cfa3eb92fbb0", 
+    "name": "Panel Thickness"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "bbb25af7-6bd4-4e63-8930-16355cca08c3", 
+    "name": "C"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "bbc9a1c6-3551-4064-abc4-6da59244bda9", 
+    "name": "F"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "bc0bd947-9723-477b-bc68-8729aa8c28b2", 
+    "name": "Sort Level 3"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "bc606b9d-06a7-4d2e-826f-54bc45a7d06a", 
+    "name": "Equipment Number"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "bc9b51c2-515b-41f2-823e-51c348285b00", 
+    "name": "Panel Material"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "bcba20be-afa3-4c3c-be73-2c579623c243", 
+    "name": "Panel Stack Number"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "bcee3abe-d281-4157-99bc-f93de32969ca", 
+    "name": "Window Sash Material"
+  }, 
+  {
+    "data_type": "Frequency", 
+    "description": null, 
+    "group": "Electrical", 
+    "guid": "bd007a68-bc5f-4c5b-a48a-d3f630a470ae", 
+    "name": "Frequency"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "bdbcad5c-63bb-46c8-a7bc-aa402b87ec34", 
+    "name": "Green Information"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "bddc75f4-8e27-4afc-add0-de7358bbf6d3", 
+    "name": "Product Documentation Link"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "be2017cc-7e1c-421c-9b20-161d71177719", 
+    "name": "SST_Type Mark"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "be696af9-da7d-4dad-ab06-76e7567f929a", 
+    "name": "Model ID"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "bf05dffd-1666-4b81-8d8d-074ff06cea3a", 
+    "name": "Egress"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "bf38daf9-f6dc-444d-95c1-1d3ee47527c3", 
+    "name": "Clearance Front Pattern 3"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "bffcdb82-3dc5-46c9-809c-e19a7fbe410f", 
+    "name": "Fin pitch of heat exchanger"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "c0216a5c-61bb-4445-b37d-bca3f6018bc8", 
+    "name": "Frame Finish"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "c028e9ac-450c-4703-86ca-2f2df67ea738", 
+    "name": "z Radius"
+  }, 
+  {
+    "data_type": "Pressure", 
+    "description": null, 
+    "group": "Mechanical - Loads", 
+    "guid": "c0418d4c-b08a-4ad1-a1cf-146dfe580b07", 
+    "name": "Return Air Pressure Drop"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "c0e13828-748d-4e27-a6d3-08174810beee", 
+    "name": "Max. length (Total)"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "c133af16-addf-4f7f-9d03-26f387185e7a", 
+    "name": "Length"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "c15698e1-b420-4d68-845d-52954d0ebc46", 
+    "name": "Sill Finish"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "c1bd5aec-9545-4a3d-b39e-2197c1b2af0d", 
+    "name": "Panel Height"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "c267d593-5c83-4461-8bdb-24ff57034a58", 
+    "name": "R"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "c2776260-b9c0-4af8-a757-b0d3a1002dc1", 
+    "name": "Design Pressure XO/OX"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "c31d9987-c9b5-41f8-a88a-6ab857a5c525", 
+    "name": "Table Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "c4225759-7dad-4621-8ea9-64de4caf65c4", 
+    "name": "UL Conformance"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "c43e0f5b-1121-44a9-8f07-42cc88038dd8", 
+    "name": "ADA Compliant"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "c4aec85b-e515-4f29-9f8a-a3f578da8b3f", 
+    "name": "Installation instructions"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "c5a41d40-502f-4df7-bd00-389d272252a4", 
+    "name": "Copyright © Cadac"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "c5f25d97-91ad-48c8-96e2-99eac6fbb3f1", 
+    "name": "Product Page URL"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "c5f4219c-c265-4bcc-96c9-226e041e98ca", 
+    "name": "Pellicle Material"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "c6144eee-f8a1-47a4-8676-3acad10453d9", 
+    "name": "Exterior Finish"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "c65a9550-fc47-429b-a745-4b795ce5184f", 
+    "name": "ADA Compliant"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "c6f9a28f-2fa4-44c5-bc2d-16443a2656e8", 
+    "name": "Frame Color"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "c74578cd-41b8-40ee-8bbc-be58568afe64", 
+    "name": "SP_Allowable Loads_Uplift_160"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "c7721997-446c-45d2-8906-2a7394dd5bdc", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "c7a5fad8-702a-4d41-b692-a2932a995d4a", 
+    "name": "Deep Box Frame"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "c7c38439-10ca-4db2-b6cb-e436d4871bf6", 
+    "name": "Door Finish"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "c8b28c76-6251-4823-a2be-c052b911e185", 
+    "name": "Interior Finish"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "c8c6fb26-2f01-4dfe-ad51-3bf493cfb645", 
+    "name": "Clearance Right Pattern 3"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "c90e948a-56c4-45dd-b6b4-b0e4ee7cfbd2", 
+    "name": "Interior Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "c96e4fdd-0546-4b54-9485-0d927baea776", 
+    "name": "Door Handle Height"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Graphics", 
+    "guid": "c97f4ee5-00d4-4b4e-b66f-8dfd9f850758", 
+    "name": "Exterior"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "c9b6fdf7-9301-4393-92c4-fce5ff57ecaf", 
+    "name": "Window Glass Type"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "ca38994e-329f-48d2-89b8-de5140355e2b", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "cace001c-0768-461a-9684-324c7cef0db9", 
+    "name": "Projection from Host"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "cada7252-94fc-415b-9a49-8ad79a51ae19", 
+    "name": "Prairie Lite Cut"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "cae2e7e2-03f2-4e1b-ad6f-2b37af29aef3", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "cb3230b2-9a00-4f92-86cc-d6fbcb479ebc", 
+    "name": "Uniclass 2015 Name"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "cbbf18d5-21c3-488a-9a03-d5c3af9772c3", 
+    "name": "Hardware Color"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "cc15f662-bc24-4960-bdcc-889bfd674011", 
+    "name": "Allowable Loads_CCQ_Uplift_160"
+  }, 
+  {
+    "data_type": "Temperature", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "cc30149a-f7b4-46cc-a02d-eb9165ca485e", 
+    "name": "Cooling Leaving Dry Bulb Temperature"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "cc6103bb-1c4f-4574-8c3b-fe2be3bd0450", 
+    "name": "z Interior Radius Front"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "cd02d730-c667-4ce2-8844-52a22adecb48", 
+    "name": "Machine Bolts_Post_3/4"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "cd1e2e83-d7be-41de-9c2b-d92d2032bd85", 
+    "name": "Panel Width"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "ce1805b0-3a9c-4073-a3e7-d6071ba76f0c", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "ce55d077-4a32-4ae6-9e5b-c2998f34385e", 
+    "name": "Base"
+  }, 
+  {
+    "data_type": "Number of Poles", 
+    "description": null, 
+    "group": "Electrical", 
+    "guid": "cec2e9cb-9151-4b72-a3a6-2ebda7e2b2d4", 
+    "name": "Number of Poles"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "cecc3142-a662-4a88-add6-9ea0dbb9ad2e", 
+    "name": "Actual Rough Height"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "cf0ed681-c047-42d9-b4f8-62f8b0a81b35", 
+    "name": "Extra Rough Width"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "cf4cc012-d2ae-43b6-8947-19e00e3e9772", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "d00bcd51-e264-4047-b7a3-6954c8e421af", 
+    "name": "MasterFormat04 Keynote"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "d0551fe0-c6db-4ce8-b009-40f6a0f7d76f", 
+    "name": "Exterior Trim Finish"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "d07b3ce4-2330-47c2-8ac6-86852762b6d9", 
+    "name": "z Tub Blend Width"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "d0ce89e8-997a-41ab-b37f-8b682d361af3", 
+    "name": "Part Number"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "d0fc5a24-9ae6-49f8-8ecb-6ff8169475f8", 
+    "name": "STC Rating"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "d191bd51-5e90-4309-8e60-7e093966d721", 
+    "name": "Fasteners_Post Flange_Type"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "d1dfc9ac-0af2-4486-b4f3-a43d5488a9e0", 
+    "name": "Hardware Finish"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "d1f44a9a-15c6-4b78-8ad4-53255261af0e", 
+    "name": "Panel Height 2"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "d21677f4-e9a3-4723-9d13-5deb865dbd6d", 
+    "name": "Material"
+  }, 
+  {
+    "data_type": "Heating Load", 
+    "description": null, 
+    "group": "Mechanical - Loads", 
+    "guid": "d2b5011a-4031-45df-979e-01286ebae2f0", 
+    "name": "Nominal Heating Capacity"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "d48b501a-37be-4986-b325-567937e58082", 
+    "name": "Shelf Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "d496c125-0b60-4806-a1b6-d801e550d496", 
+    "name": "Desired Width"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "d4f0e62a-e661-49b7-9e08-663e3f0cb303", 
+    "name": "Knobs"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "d5f0844b-d6ae-454d-8805-0c98fff86c79", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "d67bc067-a2c9-47b6-a665-6405f1840294", 
+    "name": "Exterior Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "d6d2879d-2efe-41ea-a722-b91197e80dee", 
+    "name": "z Fluted Void Offset"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "d6f155b8-f99d-4a13-8bd5-0f56a73cd0af", 
+    "name": "Glazing Thickness"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "d6fc2b4a-ea3e-48c2-a803-d80ff40e53a5", 
+    "name": "Body Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "d734a424-8ad7-40b6-848e-313482459108", 
+    "name": "Omniclass Number"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "d73cebf6-76c7-4eef-a8f2-15aa556a23ee", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "d74c3292-19a7-4efb-9710-dd20b01cf3f4", 
+    "name": "Framing Type"
+  }, 
+  {
+    "data_type": "Number", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "d75a5244-58b1-4b0b-b833-994d890842e5", 
+    "name": "Solar Heat Gain Coefficient"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "d772d642-4ffa-471a-8904-14d457f523f4", 
+    "name": "Machine Bolts_Beam_3/4"
+  }, 
+  {
+    "data_type": "Temperature", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "d806cf5c-3b6a-4487-bf9f-c5ff5adbe9ec", 
+    "name": "Ambient Temperature"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "d8156b2e-c5ed-435f-81e8-bab7987590fa", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Force", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "d84b57c8-7af2-43b3-969f-72d1c737b7d1", 
+    "name": "Shipping Weight"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "d8ee03c7-052e-40a5-9678-7e38442d6feb", 
+    "name": "Part Description"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "d925ee94-4998-4a4d-b429-0cd47160a1de", 
+    "name": "Shelf Depth"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "d952dee0-a235-451e-b4a2-e9f4d8e0d368", 
+    "name": "Unit Width"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "d95aadc7-fdbf-413d-96a2-1cf33a7d8520", 
+    "name": "Door Thickness"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "d9eb74e1-c0fe-4666-9f34-3d4b174dc702", 
+    "name": "Connection  Protrusion"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "dac62997-b5a4-4bf3-b10c-e1e3cfde35f5", 
+    "name": "Glass Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "db213232-c242-40e3-9ebf-872a52f46a60", 
+    "name": "Clearance Offset Back"
+  }, 
+  {
+    "data_type": "Volume", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "dbb0886a-6f15-4e74-8f5c-618183307449", 
+    "name": "Earthwork Cut"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Graphics", 
+    "guid": "dbb4efc0-8d4b-4618-af60-bd6bd4e1baad", 
+    "name": "Front View"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "dbcf2787-1cda-4c63-bdad-e501aaa57d5a", 
+    "name": "Glazing Material"
+  }, 
+  {
+    "data_type": "Velocity", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "dbe34feb-1952-4bb4-a76a-cea29e70067d", 
+    "name": "Face Velocity (FPM)"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Visibility", 
+    "guid": "dc4da783-fd8e-4750-a1e0-0e61889ca5f4", 
+    "name": "Is CC and Straps Rotated 90"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "dc665d53-c89e-4faf-a046-6ead78286f0b", 
+    "name": "Product Material"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "dc948b96-7293-4a07-bea7-ada30794491f", 
+    "name": "Feet Pressure Drop"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Graphics", 
+    "guid": "dcdea1f6-ce4b-4e53-809d-c27a9a5d2f74", 
+    "name": "Exterior Apron"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "dded72ab-6ac1-4e43-8287-1fba72ed0c2d", 
+    "name": "OmniClass Description"
+  }, 
+  {
+    "data_type": "Air Flow", 
+    "description": null, 
+    "group": "Mechanical - Flow", 
+    "guid": "de163cc0-f0ec-4db4-841c-9e8d501a560e", 
+    "name": "Design Supply Air Flow"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "de402f15-257f-4db4-a1a7-650409cf6d0d", 
+    "name": "z Fill Interior Width"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "dee43a84-47fc-4b0f-bcf2-4797fd948097", 
+    "name": "Cladding Material"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "def61ea0-6c94-4bca-ab68-736669c7ea89", 
+    "name": "Machine Bolts_Beam_5/8"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "df5a947c-863c-4e04-8fdb-ef27a544a46a", 
+    "name": "Clearance Bottom Pattern 2"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "dfa252e8-7575-4086-bcea-68a123af1845", 
+    "name": "Send Message"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "dfe3c31e-02b0-4380-9214-50a6b36884fd", 
+    "name": "Window Type 2"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "e0630a0f-03de-4b96-8e2b-a59c177d0cc0", 
+    "name": "Metal Gauge"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "e06f5240-9b3c-48a4-82ed-7b561552d9c7", 
+    "name": "Clearance Left Pattern 2"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "e0ee7864-8773-44dc-81f8-72a7f5599941", 
+    "name": "Clearance Offset Right"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Green Building Properties", 
+    "guid": "e12cad99-dcc9-4303-9c2f-7f63f211388c", 
+    "name": "Green Building-LEED"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "e14656d3-1793-4574-99b1-882cb311beb1", 
+    "name": "Maximum Glazing Height"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "e267e252-632a-4cd3-93cf-8f1fcc6d99a5", 
+    "name": "Panel Height 2"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Electrical - Loads", 
+    "guid": "e320e4e0-bd06-4c78-97eb-39caa73f89e0", 
+    "name": "Load Sub-Classification Motor"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "e3465f54-1d82-4ad8-bc8e-511da1e40ab1", 
+    "name": "Rough Width Exterior"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "e4a47afa-574e-4658-a25e-4b4f76c22a7a", 
+    "name": "Clearance Offset Front"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "e538cb37-d8ba-49a6-bf52-18037407254c", 
+    "name": "Region Europe"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "e5c57961-71a7-4286-86ef-c0a1c82ebf6a", 
+    "name": "Frame Thickness"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "e5c701dd-b676-44c8-bb34-e0f037923d89", 
+    "name": "E"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "e64b675f-0059-4131-9ea7-baac03913311", 
+    "name": "Door Slab Width"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "e711630e-b83c-4125-b868-2ca3de31d51f", 
+    "name": "Is Void"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "e755367e-e04d-42b3-b2f8-9ba25084de05", 
+    "name": "Manufacturer's Notes"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "e7764343-92ca-4ff3-8363-17e188611058", 
+    "name": "Glass Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "e7a37fb3-abe4-44eb-b6a4-c74329a80811", 
+    "name": "Fastener Type"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "e8228ce5-fe0c-4a26-93bf-59c013c1bf31", 
+    "name": "Nominal Width"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "e83684ac-eda1-4b2e-aca2-9db7a9b51451", 
+    "name": "Hardware LS 100"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "e86466af-bc19-4785-aefa-dc54c98d9555", 
+    "name": "Power Connection Offset Right"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "e873b934-9f40-43a4-ae73-87f375061f0d", 
+    "name": "Equipment Abbreviation"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "e9325170-691c-4081-9a82-3ea51f0f9ff0", 
+    "name": "Glass Thickness"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Analytical Model", 
+    "guid": "e9597d84-1a57-44da-bd11-235b8e16b469", 
+    "name": "E283_Air-Infiltration"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "e967c88b-152d-458d-99a3-702138c935d8", 
+    "name": "Allowable Loads_Lateral_PC_160"
+  }, 
+  {
+    "data_type": "Angle", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "ea006535-7b16-43de-9b76-cc003a06dd14", 
+    "name": "z Drain Angle"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "ea051c96-043b-410d-a2ce-3ddc357aff53", 
+    "name": "Operation temperature range_Heating"
+  }, 
+  {
+    "data_type": "Family type: Specialty Equipment", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "ea44acbb-de07-4e32-845e-e5996f04a749", 
+    "name": "Clearance Type"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "eae72831-88b0-45df-8aa4-35bb0b6149a9", 
+    "name": "Overall Width"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "eaf98c03-3bad-4bcc-8a07-b303ae384c88", 
+    "name": "Armpad Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "eafa4376-701d-423a-906c-e9e76dd752ca", 
+    "name": "Window Type"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "eb067394-2895-4fbd-a1ca-18ecd82ed6ee", 
+    "name": "NBS Reference Description"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "eb2b195d-87b5-427c-8d99-459a4181e3bc", 
+    "name": "Bolt Pitch Depth"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "eb91f239-0217-4b65-9e9a-70f4a245f702", 
+    "name": "Bolts_Post_SDS1/4x2 1/2 Screws"
+  }, 
+  {
+    "data_type": "Apparent Power", 
+    "description": null, 
+    "group": "Electrical - Loads", 
+    "guid": "eba71a0a-1709-4807-9b7e-631218f9e416", 
+    "name": "Apparent Power"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "ec154d12-acf0-4c39-9701-2712c36fec78", 
+    "name": "Cladding"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "edc29993-2798-48dc-a4d1-d8e96c6721a8", 
+    "name": "Uniclass 1.4 Description"
+  }, 
+  {
+    "data_type": "Electrical Potential", 
+    "description": null, 
+    "group": "Electrical", 
+    "guid": "ee1f8bb8-e503-49a8-bd5b-170d64400d82", 
+    "name": "Voltage"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "ee35ad84-b029-481a-b600-c9e17da63d7d", 
+    "name": "Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "ee7540a8-d7b3-40a0-bf70-17a221e1a1f7", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "eea9d7a8-f5e1-4d65-af99-e2cd4feed545", 
+    "name": "Glass Material"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "ef07950f-92b2-4bc5-9df0-2e1bffab3117", 
+    "name": "COBIe Type Category"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "ef813466-b456-4330-8b2a-24b50bef8d92", 
+    "name": "Desired Height"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "efea89e4-cd71-4406-b550-66cec880dedf", 
+    "name": "Depth"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "f0453eb0-0e0d-4e54-96b9-2f32ac0d639c", 
+    "name": "DF_Allowable Loads_Uplift_160"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "f13adf0f-85de-4e2c-b837-2743d74ac20d", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Graphics", 
+    "guid": "f1b9338d-a8c3-4ee1-b780-d1fa919a3190", 
+    "name": "Has Snap Locations"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "f2309def-c4a8-44e6-a91e-3847f00f3860", 
+    "name": "Threshold Material"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Green Building Properties", 
+    "guid": "f27e2320-5fe3-47e8-9504-af8d3dca5898", 
+    "name": "LEED Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "IFC Parameters", 
+    "guid": "f28c8c23-6fb6-4f4a-9ccf-dd59aa0cd592", 
+    "name": "UNSPSC Code"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "f28d7497-0830-4e34-8dc6-0baf206ab4ce", 
+    "name": "Threshold Finish"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "f2e71277-6566-4e84-bddf-367b6a0966d8", 
+    "name": "SPF/HF_Allowable Loads_Steel Side Plate Shear_100_14ga & 12ga"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "f3b9a88a-def9-48f8-be08-227f338384bb", 
+    "name": "Region Oceania"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "f3bc4757-0a53-424e-88ad-de749e2c4e13", 
+    "name": "SP_Allowable Withdrawal per Thread Penetration_100"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "f3e9aa71-e0e3-408f-8fac-39ea6a4d0c9a", 
+    "name": "Fasteners_Base Bottom_16d"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "f3f6485f-afb7-40bd-ae90-8ecd5d7db03f", 
+    "name": "Fasteners Each Side_Surfaces_Post Flange_16d"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "f4317f38-d51a-43f7-af73-7cdb73e1d63a", 
+    "name": "Left View"
+  }, 
+  {
+    "data_type": "Reinforcement Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "f4a63ffb-d66f-4d8d-8098-6cfb48fb7257", 
+    "name": "H"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "f4f8de78-2bb0-4b8b-935d-25ba220870fd", 
+    "name": "Lite Cut Prairie 9"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "f5403f65-d7fa-479e-98e1-ee5bcd997efc", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "f57b02de-fc74-457e-99bf-c8697b6a93f7", 
+    "name": "SR Document GUID"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "f5809dac-793e-4fd2-b2a4-7f167aea5b73", 
+    "name": "Window Material"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "f5e38c8c-feda-441f-9c5d-adc515e40601", 
+    "name": "U Values URL"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Electrical - Loads", 
+    "guid": "f68402d1-2e1c-4866-bfde-39d62f05c524", 
+    "name": "Rated Input Power_Heating"
+  }, 
+  {
+    "data_type": "Length", 
+    "description": null, 
+    "group": "Dimensions", 
+    "guid": "f695fde0-3f94-4530-abf9-7fd0e5e88457", 
+    "name": "Length"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "f69b2f83-d2e4-473a-9d42-b51e1b27bdba", 
+    "name": "SPF/HF_Allowable Loads_Uplift_160"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "f6ba4cbf-a579-4ddb-9a83-8a698441e2ea", 
+    "name": "_visibleleft"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "f75b7b25-c423-4d92-9767-111a836c4f5c", 
+    "name": "Egress"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "f783a734-784f-4906-b653-547d9e39ea23", 
+    "name": "Equipment Abbreviation"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "f7e31203-83ed-4766-b9cb-f89f711cb32b", 
+    "name": "DF/SP_Allowable Loads_Header_Floor_100"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "f8a72e73-e530-4abd-a04f-85e9f82fdf8c", 
+    "name": "Identity Data"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "General", 
+    "guid": "f8c0d156-d28c-4d0a-9922-14e9993c98e5", 
+    "name": "Region Middle East"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "f8c63041-3adb-439e-8758-ff7b90901ea1", 
+    "name": "Product Material"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Model Properties", 
+    "guid": "f8fa5a56-8d73-4534-8c6b-656ec19d04e8", 
+    "name": "Screen Required"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "f90fd6a4-f65f-4315-a2d2-1175216bdc24", 
+    "name": "Collar with Internal Water Dam"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "faf17ad2-588b-4eaa-8643-b6d0e102bf03", 
+    "name": "DF_Allowable Loads_Floor_100"
+  }, 
+  {
+    "data_type": "Temperature", 
+    "description": null, 
+    "group": "Mechanical", 
+    "guid": "fb071134-1c1a-46fe-b2a6-3b42a1eae4da", 
+    "name": "Heating Leaving Dry Bulb Temperature"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Text", 
+    "guid": "fb37e451-4f41-46c9-98be-71dedb262788", 
+    "name": "SpecWizard"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Electrical", 
+    "guid": "fb4d2c28-866d-41d3-9e7e-f7bda388ee2a", 
+    "name": "Available voltage range"
+  }, 
+  {
+    "data_type": "Integer", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "fb82cce5-8b42-4dd5-8245-7296dc8a9bc3", 
+    "name": "Package Qty"
+  }, 
+  {
+    "data_type": "Yes/No", 
+    "description": null, 
+    "group": "Constraints", 
+    "guid": "fc631645-a3a1-47ad-9190-c7428cbf3b60", 
+    "name": "At rear only"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Structural", 
+    "guid": "fc7ca4b4-1856-4300-856f-f61005e84629", 
+    "name": "SPF/HF_Allowable Loads_Header_Snow_115"
+  }, 
+  {
+    "data_type": "Text", 
+    "description": null, 
+    "group": "Other", 
+    "guid": "fcd13689-7f23-4d8f-9892-c79964ee7a92", 
+    "name": "Manufacturer Phone - Toll Free"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Identity Data", 
+    "guid": "fdd52cc7-b368-4e20-a982-efa3d89f7c4d", 
+    "name": "CADworks URL"
+  }, 
+  {
+    "data_type": "Material", 
+    "description": null, 
+    "group": "Materials and Finishes", 
+    "guid": "ff90d5a1-f0d3-4918-b695-6d9ec9e1b48e", 
+    "name": "Dome"
+  }, 
+  {
+    "data_type": "URL", 
+    "description": null, 
+    "group": "Energy Analysis", 
+    "guid": "ffe0c28b-0991-4d82-a253-62e5f9fd7231", 
+    "name": "U Values URL Dual Glaze"
+  }
+]
