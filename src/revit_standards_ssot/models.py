@@ -33,10 +33,12 @@ RAW_REVIT_DATA_TYPES: frozenset[str] = frozenset({
     # MEP/structural built-in types confirmed present in the 20260430 export
     "Air Flow", "Apparent Power", "Cooling Load", "Current",
     "Electrical Potential", "Flow", "Force", "Frequency",
-    "Heating Load", "Pipe Size", "Pressure", "Temperature", "Velocity",
-    # Deferred — pending anomaly resolution:
-    # "Number of Poles"      — Phase records have this type erroneously
-    # "Reinforcement Length" — single-letter inherited cluster under review
+    "Heating Load", "Number of Poles", "Pipe Size", "Pressure",
+    "Reinforcement Length", "Temperature", "Velocity",
+    # Note: "Number of Poles" is a confirmed Revit built-in type. Two Phase records
+    # have it assigned erroneously — that is a data-quality issue, not a type error.
+    # Note: "Reinforcement Length" is a confirmed Revit built-in type. The single-letter
+    # name cluster (K, B, O, …) is a data-quality issue under review, not a type error.
     # Deferred — canonical naming unresolved:
     # "Family type: Generic Models", "Family type: Casework",
     # "Family type: Doors", "Family type: Specialty Equipment"

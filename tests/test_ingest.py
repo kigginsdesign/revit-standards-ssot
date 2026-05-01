@@ -105,38 +105,35 @@ def test_yes_no_is_not_an_unknown_data_type(session, tmp_path, caplog):
 
 
 def test_unknown_data_type_is_accepted_not_rejected(session, tmp_path):
-    # "Family type: Casework" is intentionally deferred from RAW_REVIT_DATA_TYPES.
     raw_file = tmp_path / "test.json"
-    _write_raw(raw_file, [{"guid": GUID_A, "name": "Screen Type", "data_type": "Family type: Casework"}])
+    _write_raw(raw_file, [{"guid": GUID_A, "name": "Test Param", "data_type": "Definitely_Unknown_Test_Type"}])
 
     counts = ingest_file(raw_file, session)
 
     assert counts == {"inserted": 1, "updated": 0, "rejected": 0}
     record = session.get(SharedParameterRecord, GUID_A)
     assert record is not None
-    assert record.data_type == "Family type: Casework"
+    assert record.data_type == "Definitely_Unknown_Test_Type"
 
 
 def test_unknown_data_type_produces_warning(session, tmp_path, caplog):
-    # "Family type: Casework" is intentionally deferred from RAW_REVIT_DATA_TYPES.
     raw_file = tmp_path / "test.json"
-    _write_raw(raw_file, [{"guid": GUID_A, "name": "Screen Type", "data_type": "Family type: Casework"}])
+    _write_raw(raw_file, [{"guid": GUID_A, "name": "Test Param", "data_type": "Definitely_Unknown_Test_Type"}])
 
     with caplog.at_level(logging.WARNING, logger=INGEST_LOGGER):
         ingest_file(raw_file, session)
 
     unknown_warnings = [r for r in caplog.records if "RAW_REVIT_DATA_TYPES" in r.message]
     assert len(unknown_warnings) == 1
-    assert "Family type: Casework" in unknown_warnings[0].message
-    assert "Screen Type" in unknown_warnings[0].message
+    assert "Definitely_Unknown_Test_Type" in unknown_warnings[0].message
+    assert "Test Param" in unknown_warnings[0].message
 
 
 def test_unknown_data_type_warning_includes_count_and_samples(session, tmp_path, caplog):
-    # "Reinforcement Length" is intentionally deferred from RAW_REVIT_DATA_TYPES.
     raw_file = tmp_path / "test.json"
     _write_raw(raw_file, [
-        {"guid": GUID_A, "name": "Bar Diameter", "data_type": "Reinforcement Length"},
-        {"guid": GUID_B, "name": "Hook Length", "data_type": "Reinforcement Length"},
+        {"guid": GUID_A, "name": "Param One", "data_type": "Definitely_Unknown_Test_Type"},
+        {"guid": GUID_B, "name": "Param Two", "data_type": "Definitely_Unknown_Test_Type"},
     ])
 
     with caplog.at_level(logging.WARNING, logger=INGEST_LOGGER):
@@ -146,16 +143,16 @@ def test_unknown_data_type_warning_includes_count_and_samples(session, tmp_path,
     unknown_warnings = [r for r in caplog.records if "RAW_REVIT_DATA_TYPES" in r.message]
     assert len(unknown_warnings) == 1
     msg = unknown_warnings[0].message
-    assert "Reinforcement Length" in msg
+    assert "Definitely_Unknown_Test_Type" in msg
     assert "2" in msg
 
 
-def test_newly_added_raw_revit_type_does_not_warn(session, tmp_path, caplog):
-    # Temperature and Air Flow were added to RAW_REVIT_DATA_TYPES in the vocabulary split.
+def test_newly_confirmed_raw_revit_types_do_not_warn(session, tmp_path, caplog):
+    # Spot-check confirmed Revit built-in types that should not trigger a warning.
     raw_file = tmp_path / "test.json"
     _write_raw(raw_file, [
         {"guid": GUID_A, "name": "Supply Temp", "data_type": "Temperature"},
-        {"guid": GUID_B, "name": "Supply Air", "data_type": "Air Flow"},
+        {"guid": GUID_B, "name": "Bar Diameter", "data_type": "Reinforcement Length"},
     ])
 
     with caplog.at_level(logging.WARNING, logger=INGEST_LOGGER):

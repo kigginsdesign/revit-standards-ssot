@@ -88,6 +88,11 @@ Revit or modifies Revit files. Write-back is out of scope for MVP.
   1. Pydantic model validation (accepts valid, rejects invalid)
   2. SQLAlchemy insert / update / query round-trips
   3. YAML export (only approved records appear)
+- When writing tests that assert rejection or warning behavior for unknown `data_type`
+  values, always use a clear synthetic sentinel value (e.g., `"Definitely_Unknown_Test_Type"`)
+  rather than a real Revit type string. Real Revit types may be added to
+  `RAW_REVIT_DATA_TYPES` at any time, silently changing the test semantics and breaking
+  the assertion. Do not use real-world types as proxies for "unknown."
 
 ---
 
