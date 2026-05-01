@@ -10,7 +10,13 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from revit_standards_ssot.ingest import ingest_file
-from revit_standards_ssot.models import Base, RawSharedParameter, SharedParameterRecord
+from revit_standards_ssot.models import (
+    Base,
+    FIRM_STANDARD_DATA_TYPES,
+    RAW_REVIT_DATA_TYPES,
+    RawSharedParameter,
+    SharedParameterRecord,
+)
 
 INGEST_LOGGER = "revit_standards_ssot.ingest"
 
@@ -82,7 +88,7 @@ def test_known_data_type_produces_no_unknown_warning(session, tmp_path, caplog):
     with caplog.at_level(logging.WARNING, logger=INGEST_LOGGER):
         ingest_file(raw_file, session)
 
-    unknown_warnings = [r for r in caplog.records if "KNOWN_DATA_TYPES" in r.message]
+    unknown_warnings = [r for r in caplog.records if "RAW_REVIT_DATA_TYPES" in r.message]
     assert unknown_warnings == []
 
 
@@ -94,51 +100,111 @@ def test_yes_no_is_not_an_unknown_data_type(session, tmp_path, caplog):
         counts = ingest_file(raw_file, session)
 
     assert counts == {"inserted": 1, "updated": 0, "rejected": 0}
-    unknown_warnings = [r for r in caplog.records if "KNOWN_DATA_TYPES" in r.message]
+    unknown_warnings = [r for r in caplog.records if "RAW_REVIT_DATA_TYPES" in r.message]
     assert unknown_warnings == []
 
 
 def test_unknown_data_type_is_accepted_not_rejected(session, tmp_path):
+    # "Family type: Casework" is intentionally deferred from RAW_REVIT_DATA_TYPES.
     raw_file = tmp_path / "test.json"
-    _write_raw(raw_file, [{"guid": GUID_A, "name": "Duct Size", "data_type": "Air Flow"}])
+    _write_raw(raw_file, [{"guid": GUID_A, "name": "Screen Type", "data_type": "Family type: Casework"}])
 
     counts = ingest_file(raw_file, session)
 
     assert counts == {"inserted": 1, "updated": 0, "rejected": 0}
     record = session.get(SharedParameterRecord, GUID_A)
     assert record is not None
-    assert record.data_type == "Air Flow"
+    assert record.data_type == "Family type: Casework"
 
 
 def test_unknown_data_type_produces_warning(session, tmp_path, caplog):
+    # "Family type: Casework" is intentionally deferred from RAW_REVIT_DATA_TYPES.
     raw_file = tmp_path / "test.json"
-    _write_raw(raw_file, [{"guid": GUID_A, "name": "Duct Size", "data_type": "Air Flow"}])
+    _write_raw(raw_file, [{"guid": GUID_A, "name": "Screen Type", "data_type": "Family type: Casework"}])
 
     with caplog.at_level(logging.WARNING, logger=INGEST_LOGGER):
         ingest_file(raw_file, session)
 
-    unknown_warnings = [r for r in caplog.records if "KNOWN_DATA_TYPES" in r.message]
+    unknown_warnings = [r for r in caplog.records if "RAW_REVIT_DATA_TYPES" in r.message]
     assert len(unknown_warnings) == 1
-    assert "Air Flow" in unknown_warnings[0].message
-    assert "Duct Size" in unknown_warnings[0].message
+    assert "Family type: Casework" in unknown_warnings[0].message
+    assert "Screen Type" in unknown_warnings[0].message
 
 
 def test_unknown_data_type_warning_includes_count_and_samples(session, tmp_path, caplog):
+    # "Reinforcement Length" is intentionally deferred from RAW_REVIT_DATA_TYPES.
     raw_file = tmp_path / "test.json"
     _write_raw(raw_file, [
-        {"guid": GUID_A, "name": "Supply Air", "data_type": "Air Flow"},
-        {"guid": GUID_B, "name": "Return Air", "data_type": "Air Flow"},
+        {"guid": GUID_A, "name": "Bar Diameter", "data_type": "Reinforcement Length"},
+        {"guid": GUID_B, "name": "Hook Length", "data_type": "Reinforcement Length"},
     ])
 
     with caplog.at_level(logging.WARNING, logger=INGEST_LOGGER):
         counts = ingest_file(raw_file, session)
 
     assert counts == {"inserted": 2, "updated": 0, "rejected": 0}
-    unknown_warnings = [r for r in caplog.records if "KNOWN_DATA_TYPES" in r.message]
+    unknown_warnings = [r for r in caplog.records if "RAW_REVIT_DATA_TYPES" in r.message]
     assert len(unknown_warnings) == 1
     msg = unknown_warnings[0].message
-    assert "Air Flow" in msg
+    assert "Reinforcement Length" in msg
     assert "2" in msg
+
+
+def test_newly_added_raw_revit_type_does_not_warn(session, tmp_path, caplog):
+    # Temperature and Air Flow were added to RAW_REVIT_DATA_TYPES in the vocabulary split.
+    raw_file = tmp_path / "test.json"
+    _write_raw(raw_file, [
+        {"guid": GUID_A, "name": "Supply Temp", "data_type": "Temperature"},
+        {"guid": GUID_B, "name": "Supply Air", "data_type": "Air Flow"},
+    ])
+
+    with caplog.at_level(logging.WARNING, logger=INGEST_LOGGER):
+        counts = ingest_file(raw_file, session)
+
+    assert counts == {"inserted": 2, "updated": 0, "rejected": 0}
+    unknown_warnings = [r for r in caplog.records if "RAW_REVIT_DATA_TYPES" in r.message]
+    assert unknown_warnings == []
+
+
+def test_family_type_variants_still_warn(session, tmp_path, caplog):
+    # "Family type: <X>" variants are intentionally deferred from RAW_REVIT_DATA_TYPES.
+    raw_file = tmp_path / "test.json"
+    _write_raw(raw_file, [
+        {"guid": GUID_A, "name": "Screen Type", "data_type": "Family type: Casework"},
+    ])
+
+    with caplog.at_level(logging.WARNING, logger=INGEST_LOGGER):
+        counts = ingest_file(raw_file, session)
+
+    assert counts == {"inserted": 1, "updated": 0, "rejected": 0}
+    unknown_warnings = [r for r in caplog.records if "RAW_REVIT_DATA_TYPES" in r.message]
+    assert len(unknown_warnings) == 1
+    assert "Family type: Casework" in unknown_warnings[0].message
+
+
+def test_firm_standard_data_types_not_used_to_reject_raw_ingest(session, tmp_path):
+    # A data_type absent from FIRM_STANDARD_DATA_TYPES must not cause rejection.
+    non_standard_type = "Temperature"
+    assert non_standard_type not in FIRM_STANDARD_DATA_TYPES
+    assert non_standard_type in RAW_REVIT_DATA_TYPES
+
+    raw_file = tmp_path / "test.json"
+    _write_raw(raw_file, [{"guid": GUID_A, "name": "Room Temp", "data_type": non_standard_type}])
+
+    counts = ingest_file(raw_file, session)
+
+    assert counts["rejected"] == 0
+    assert counts["inserted"] == 1
+
+
+def test_standard_data_type_is_optional_on_raw_record(session, tmp_path):
+    raw_file = tmp_path / "test.json"
+    _write_raw(raw_file, [{"guid": GUID_A, "name": "Wall Height", "data_type": "Length"}])
+
+    ingest_file(raw_file, session)
+
+    record = session.get(SharedParameterRecord, GUID_A)
+    assert record.standard_data_type is None
 
 
 def test_ingest_succeeds_without_curation_fields_in_raw_data(session, tmp_path):

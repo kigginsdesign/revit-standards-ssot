@@ -72,23 +72,69 @@
 
 ```
 SharedParameter
-  guid        : str  (UUID format, primary key)
-  name        : str  (non-empty)
-  data_type   : str  (e.g. Text, Integer, Number, Length, YesNo, ...)
-  group       : str | None
-  description : str | None
-  status      : Literal["raw", "proposed", "approved", "deprecated"]
-  source_file : str  (filename of the raw JSON export it came from)
-  created_at  : datetime
-  updated_at  : datetime
+  guid               : str       — UUID format, primary key
+  name               : str       — non-empty
+  data_type          : str       — raw Revit-emitted value, immutable after ingest
+  group              : str|None
+  description        : str|None
+  status             : Literal["raw","proposed","approved","deprecated"]
+  source_file        : str       — filename of the originating raw JSON export
+  curation_note      : str|None  — human/script reasoning for deprecation or curation
+  standard_data_type : str|None  — optional firm-canonical type mapping (see below)
+  created_at         : datetime
+  updated_at         : datetime
 ```
 
-## Allowed data_type values (Revit shared parameter types)
+## data_type vs standard_data_type
 
-Text, Integer, Number, Length, Area, Volume, Angle, URL, Material, YesNo,
-MultilineText, Currency, LoadClassification, Image, FamilyType
+**`data_type`** is immutable raw evidence set during ingest. It is exactly what Revit
+emitted and is never modified by any downstream step.
 
-Other values are accepted but logged as warnings during ingest.
+**`standard_data_type`** is an optional curated field set during enrichment. It maps the
+raw Revit vocabulary to the firm-approved canonical type string (e.g., `data_type = "Yes/No"`
+→ `standard_data_type = "YesNo"`). It is validated against `FIRM_STANDARD_DATA_TYPES`
+only during strict promotion (future `promote.py`).
+
+## data_type vocabulary constants
+
+**`RAW_REVIT_DATA_TYPES`** — known raw strings emitted by Revit. Used only for
+warning-level diagnostics during ingest. Values outside this set are accepted but logged.
+Not an approval allowlist.
+
+**`FIRM_STANDARD_DATA_TYPES`** — strict firm allowlist for `standard_data_type` during
+promotion. Intentionally conservative. Not enforced until `promote.py` exists.
+
+Both constants are defined in `src/revit_standards_ssot/models.py`.
+
+## Curation Workbench
+
+The SQLite database is the Curation Workbench. Two validation tiers apply:
+
+- **Tier 1 — Evidence (ingest):** Tolerant. Accepts all records passing basic format
+  validation. Unknown `data_type` values are warned, not rejected.
+- **Tier 2 — Standard (promotion):** Strict. Future `promote.py` enforces
+  `FIRM_STANDARD_DATA_TYPES`, no name duplicates among approved records, and mandatory
+  `curation_note`.
+
+Status lifecycle:
+```
+raw  →  proposed  →  approved
+ ↓           ↓
+deprecated  deprecated
+```
+
+- `* → deprecated`: `bulk_curate.py --apply` with mandatory `--curation-note`.
+- `proposed → approved`: future `promote.py` with strict validation gates.
+
+`curation_note` documents the governance reason for every status change applied by a tool.
+
+For the full lifecycle specification, see `docs/curation_workflow.md`.
+
+## Allowed data_type values
+
+Values in `RAW_REVIT_DATA_TYPES` are accepted without a warning during ingest. All other
+values are accepted but produce a `WARNING` log entry. The full set is defined in
+`src/revit_standards_ssot/models.py`.
 
 ---
 

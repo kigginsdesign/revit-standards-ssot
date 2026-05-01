@@ -15,7 +15,7 @@ from pydantic import ValidationError
 from sqlalchemy.orm import Session
 
 from revit_standards_ssot.models import (
-    KNOWN_DATA_TYPES,
+    RAW_REVIT_DATA_TYPES,
     RawSharedParameter,
     SharedParameter,
     SharedParameterRecord,
@@ -49,7 +49,7 @@ def ingest_file(path: Path, session: Session) -> dict[str, int]:
             counts["rejected"] += 1
             continue
 
-        if param.data_type not in KNOWN_DATA_TYPES:
+        if param.data_type not in RAW_REVIT_DATA_TYPES:
             unknown_dtype_counts[param.data_type] = unknown_dtype_counts.get(param.data_type, 0) + 1
             samples = unknown_dtype_samples.setdefault(param.data_type, [])
             if len(samples) < 3:
@@ -87,7 +87,7 @@ def ingest_file(path: Path, session: Session) -> dict[str, int]:
 
     for dtype in sorted(unknown_dtype_counts, key=lambda d: -unknown_dtype_counts[d]):
         logger.warning(
-            "data_type not in KNOWN_DATA_TYPES: %r — %d record(s), e.g. %s",
+            "data_type not in RAW_REVIT_DATA_TYPES: %r — %d record(s), e.g. %s",
             dtype,
             unknown_dtype_counts[dtype],
             ", ".join(repr(n) for n in unknown_dtype_samples[dtype]),

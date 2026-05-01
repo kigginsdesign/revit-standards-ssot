@@ -21,12 +21,34 @@ _UUID_RE = re.compile(
     re.IGNORECASE,
 )
 
-KNOWN_DATA_TYPES = {
+# Raw Revit-emitted data_type strings — used only for warning-level diagnostics during
+# ingest. Unknown values are accepted but logged. This set represents the known raw
+# vocabulary emitted by Revit shared parameter files; it is NOT an approval allowlist.
+# "Yes/No" is the exact Revit-emitted string — do not normalize to "YesNo" during ingest.
+RAW_REVIT_DATA_TYPES: frozenset[str] = frozenset({
+    # Core parameter types
     "Text", "Integer", "Number", "Length", "Area", "Volume", "Angle",
     "URL", "Material", "Yes/No", "MultilineText", "Currency",
     "LoadClassification", "Image", "FamilyType",
-    # "Yes/No" is the raw Revit-emitted string; do not normalize to "YesNo" during ingest.
-}
+    # MEP/structural built-in types confirmed present in the 20260430 export
+    "Air Flow", "Apparent Power", "Cooling Load", "Current",
+    "Electrical Potential", "Flow", "Force", "Frequency",
+    "Heating Load", "Pipe Size", "Pressure", "Temperature", "Velocity",
+    # Deferred — pending anomaly resolution:
+    # "Number of Poles"      — Phase records have this type erroneously
+    # "Reinforcement Length" — single-letter inherited cluster under review
+    # Deferred — canonical naming unresolved:
+    # "Family type: Generic Models", "Family type: Casework",
+    # "Family type: Doors", "Family type: Specialty Equipment"
+})
+
+# Firm-approved standard data_type vocabulary — used for future strict promotion gates
+# (promote.py). Intentionally conservative. Not enforced during raw ingest.
+# Not enforced until promotion tooling exists and the firm vocabulary is finalised.
+FIRM_STANDARD_DATA_TYPES: frozenset[str] = frozenset({
+    "Text", "Integer", "Number", "Length", "Area", "Volume", "Angle",
+    "URL", "Material", "YesNo", "MultilineText", "LoadClassification",
+})
 
 
 # ---------------------------------------------------------------------------
