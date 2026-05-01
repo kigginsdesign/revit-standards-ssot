@@ -54,6 +54,24 @@ writes raw JSON evidence to the repo `exports/raw/` directory.
 
 See `scripts/pyrevit/README.md` for instructions.
 
+### Windows host notes
+
+- **Recommended repo path:** `C:\Dev\revit-standards-ssot`
+- **`REVIT_SSOT_REPO`** must be set to the repo root exactly (e.g.,
+  `C:\Dev\revit-standards-ssot`), not a similarly named or parent folder.
+- After extraction, verify the JSON file landed under `exports/raw/`.
+- `exports/raw/*.json` files are gitignored by default (immutable evidence, kept out of
+  routine diffs). To commit a specific export, force-add it before committing:
+  ```
+  git add -f exports/raw/<timestamp>.json
+  git commit -m "Add raw export <timestamp>"
+  ```
+- **Revit steel connection model-open failures** (journal shows SQLLocalDB /
+  SteelConnections2026 errors) are unrelated to the container pipeline. They indicate a
+  missing SQL Server LocalDB runtime on the Windows host. Restoring both SQL Server 2019
+  LocalDB (for existing Autodesk/Advance Steel instances) and a current LocalDB runtime
+  resolves this.
+
 ## Status values
 
 | Status     | Meaning                                         |

@@ -1,6 +1,6 @@
 # PROJECT_MEMORY.md — Canonical Project State
 
-Last updated: 2026-04-29
+Last updated: 2026-05-01
 
 ---
 
@@ -111,10 +111,10 @@ user-notes/             Scratch notes, not version-controlled artifacts
 ## Current status
 
 - [x] Repo initialized and connected to GitHub
-- [x] Dev container successfully built and validated
+- [x] Dev container successfully built and validated (desktop and laptop)
 - [x] Python pipeline fully operational inside container (27/27 tests passing)
 - [x] Claude Code (Max) running inside Dev Container
-- [x] First real pyRevit extraction run
+- [x] First real pyRevit extraction run (806 parameters, 20260430_220917.json committed/pushed)
 - [ ] First real ingest run against real data
 - [ ] Parameter records reviewed and approved
 - [ ] First YAML output generated
@@ -135,3 +135,22 @@ user-notes/             Scratch notes, not version-controlled artifacts
   - Coding agent execution
 
 - Local `.venv` on Windows is deprecated and should not be used going forward.
+
+### Windows host operational notes
+
+**Canonical repo path:** `C:\Dev\revit-standards-ssot`
+This is the standardized path on all Windows machines. `REVIT_SSOT_REPO` must be set to
+exactly this directory (the repo root), not a similarly named or parent folder.
+
+**Revit/pyRevit failures are outside the container boundary.**
+Agents may inspect repo code and ask the user for Revit journal output to assist
+diagnosis, but must not assume repo Python code executes during Revit model open.
+Startup hooks and event handlers are the only repo code that runs at model open.
+
+**SQL Server LocalDB dependency for Revit 2026 steel connections.**
+Revit 2026 Advance Steel / SteelConnections2026 workflows depend on SQL Server LocalDB.
+After any Windows SQL cleanup, both SQL Server 2019 LocalDB and a newer LocalDB runtime
+(2025 or later) may be required — the 2019 runtime is needed for compatibility with
+existing Autodesk/Advance Steel LocalDB instances (MSSQL15E.LOCALDB). A Revit
+model-open failure showing SQLLocalDB / SteelConnections2026 in the journal is a Windows
+host issue, not a repo or container issue.

@@ -125,6 +125,14 @@ If a section has nothing to report, write "None." Do not omit sections.
 - pyRevit scripts are authored in-repo but executed manually in Revit on Windows.
 - Agents must not attempt to execute or validate pyRevit scripts inside the dev container.
 - Validation of pyRevit behavior requires user execution and feedback.
+- **Agents must not attempt to diagnose or repair Windows/Revit host runtime dependencies
+  from inside the container.** Windows-only dependencies — Revit, pyRevit, Autodesk
+  add-ins, SQLLocalDB — are user-executed host concerns, not container concerns.
+- For pyRevit/Revit failures, agents may inspect repo code and ask the user for Revit
+  journal output, but must not assume that any repo code runs during model open unless
+  startup hooks or event handlers are explicitly present in the repo.
+- If the user reports a Revit model-open failure, the first diagnostic step is the Revit
+  journal file on the Windows host — not the container pipeline or repo code.
 
 ---
 
