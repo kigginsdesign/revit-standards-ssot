@@ -1,6 +1,6 @@
 # PROJECT_MEMORY.md — Canonical Project State
 
-Last updated: 2026-05-01
+Last updated: 2026-05-01 (session closeout)
 
 ---
 
@@ -94,7 +94,9 @@ instructions. Produces execution reports in the four-section format defined in A
 ## Repository layout
 
 .devcontainer/          Dev container config (Python 3.12 + uv)
-docs/                   Architecture docs and agent instruction copies
+docs/                   Architecture, workflow, and governance docs
+docs/reports/           Analysis and audit reports (read-only after commit)
+docs/decisions/         Durable governance decision packets
 data/schemas/           JSON schemas for raw export validation
 db/                     SQLite database file (gitignored)
 exports/raw/            Immutable pyRevit JSON exports
@@ -110,25 +112,48 @@ user-notes/             Scratch notes, not version-controlled artifacts
 
 ## Curation Workbench
 
-The SQLite database is the **Curation Workbench** — the place where raw Revit evidence is
-reconciled with firm standards. These rules govern how it is used:
+The SQLite database is the **Curation Workbench** — the locked core architecture for
+reconciling raw Revit evidence with firm standards.
 
-- Raw ingest preserves Revit reality exactly. It is not the same thing as approved firm truth.
-- Source-file correction in Revit or shared-parameter `.txt` files is **out of scope for MVP**.
-  For MVP, records that are inherited, polluted, erroneous, or not firm-standard are curated
-  in the DB by setting `status = deprecated` with a `curation_note`.
-- The pipeline has **two validation tiers**:
-  - **Tier 1 — Evidence:** Ingest accepts exactly what Revit emits, including unusual
-    data_type values, blank descriptions, duplicated names, and source anomalies, as long as
-    the required raw fields (`guid`, `name`, `data_type`) pass basic format validation.
-  - **Tier 2 — Standard:** Promotion to `approved` requires stricter validation against
-    approved firm vocabulary and explicit curation rules. Records cannot be promoted without
-    a recorded decision.
-- The `curation_note` field captures the human or script reasoning for any deprecation or
-  curation action. It is required when changing status to `deprecated` via the bulk curation
-  CLI.
-- The `standard_data_type` field is an optional firm-approved type mapping for use during
-  promotion/curation. It does not replace `data_type`; raw `data_type` is always preserved.
+**Formal lifecycle (8 stages):**
+Raw Ingest → Preflight Audit → Decision Packet → Bulk Deprecation →
+Propose Selection → Enrichment → Strict Promotion → YAML Export
+
+For the full spec, see `docs/curation_workflow.md`.
+
+**Two-tier validation model:**
+- **Tier 1 — Evidence (ingest):** Tolerant. Accepts all records passing basic format
+  validation. Unknown data_type values warned, not rejected. Source anomalies are review
+  findings, not failures.
+- **Tier 2 — Standard (promotion):** Strict. Future `promote.py` enforces
+  `FIRM_STANDARD_DATA_TYPES`, mandatory `curation_note`, no duplicate approved names.
+
+**Two-tier data type vocabulary:**
+- `data_type` — immutable raw Revit evidence set during ingest. Never modified.
+- `standard_data_type` — optional curated firm-standard mapping set during enrichment.
+  Never replaces `data_type`.
+- `RAW_REVIT_DATA_TYPES` — known raw Revit strings; used only for warning diagnostics
+  during ingest. Not an approval allowlist.
+- `FIRM_STANDARD_DATA_TYPES` — strict allowlist for `standard_data_type` during strict
+  promotion. Not enforced until `promote.py` exists.
+
+**Tool boundaries:**
+- `bulk_curate.py` — messy curation. Deprecation only. Dry-run by default.
+  Requires `--curation-note` on every `--apply`. No promotion to `approved`.
+- `promote.py` — future strict approval gating. `proposed → approved` only.
+
+**Governance artifact locations:**
+- `docs/reports/` — analysis, audit findings, preflight summaries. Read-only after commit.
+- `docs/decisions/` — durable governance decisions. Decision packets live here.
+
+**Decision packet rules:**
+- Decision packets with `Status: Proposed` do **not** authorize DB mutation.
+  Explicit Sage/Shawn sign-off is required for each batch before `--apply` is run.
+- After any `--apply` run, the same decision packet must be updated to `Status: Applied`
+  with actual commands, timestamp, matched/applied counts, and verification results,
+  committed in the same transaction.
+- Source-file correction in Revit or shared-parameter `.txt` files is out of scope for MVP.
+  For MVP, unwanted records are curated in the DB with `status = deprecated` + `curation_note`.
 
 ---
 
@@ -136,13 +161,20 @@ reconciled with firm standards. These rules govern how it is used:
 
 - [x] Repo initialized and connected to GitHub
 - [x] Dev container successfully built and validated (desktop and laptop)
-- [x] Python pipeline fully operational inside container (32/32 tests passing)
+- [x] Python pipeline fully operational inside container (55/55 tests passing)
 - [x] Claude Code (Max) running inside Dev Container
 - [x] First real pyRevit extraction run (806 parameters, 20260430_220917.json committed/pushed)
 - [x] First real ingest run against real data (806 inserted, 0 rejected)
+- [x] Runtime DB path bug fixed; test/runtime isolation guard added
+- [x] RAW_REVIT_DATA_TYPES warning diagnostics; KNOWN_DATA_TYPES split
 - [x] Data audit and curation preflight reports completed
-- [x] Curation Workbench model fields and bulk deprecation CLI implemented
-- [ ] Curation preflight anomalies resolved (Identity Data cluster, hand-authored GUIDs, duplicates)
+- [x] Curation Workbench architecture locked (model fields, workflow spec, constants)
+- [x] Bulk deprecation CLI (bulk_curate.py) implemented
+- [x] First proposed deprecation decision packet (docs/decisions/20260501_deprecation_batch_1.md)
+- [ ] Decision packet approval and first bulk deprecation apply
+- [ ] Propose selection and enrichment workflows
+- [ ] FIRM_STANDARD_DATA_TYPES vocabulary finalized
+- [ ] promote.py strict approval tool
 - [ ] Tracer-bullet parameter set approved
 - [ ] First YAML output generated
 

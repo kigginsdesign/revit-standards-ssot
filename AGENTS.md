@@ -77,6 +77,14 @@ Revit or modifies Revit files. Write-back is out of scope for MVP.
   parameters. **Never use raw SQL criteria strings** in application or tool code.
 - The `standard_data_type` field is for firm-approved type mapping during curation only.
   It does **not** replace `data_type`. Raw `data_type` is always preserved as imported.
+- Decision packets with `Status: Proposed` do **not** authorize DB mutation. Agents must
+  not run `bulk_curate.py --apply` (or any equivalent DB mutation) unless the user or
+  Sage explicitly authorizes the specific decision packet and batch in the current session.
+- After applying a decision packet, agents must update that packet file to `Status: Applied`
+  with the exact command(s) run, ISO timestamp, matched/applied record counts, and
+  verification results. This update must be in the same commit as the apply run.
+- Prefer separate `--apply` calls per decision batch over one combined operation when this
+  creates a clearer audit trail in the decision packet.
 
 ---
 

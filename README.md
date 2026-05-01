@@ -90,6 +90,10 @@ Records that are inherited, polluted, erroneous, or not firm-standard are curate
 `status = deprecated` with a `curation_note` explaining the decision.
 Use `scripts/ingest/bulk_curate.py` for controlled bulk deprecation.
 
+- Full lifecycle spec: `docs/curation_workflow.md`
+- Architecture detail: `docs/architecture.md`
+- Governance decision packets: `docs/decisions/`
+
 ## Status values
 
 | Status       | Meaning                                         |
