@@ -61,6 +61,22 @@ Revit or modifies Revit files. Write-back is out of scope for MVP.
 - All ingest data must pass Pydantic validation before touching the database.
 - Required fields: `guid`, `name`, `data_type`. Records missing these must be rejected
   and logged, not silently dropped or inserted with null values.
+- **Never reject raw ingest records** based on validation rules meant for approved records.
+  Missing descriptions, non-standard data_type values, duplicate names, and source-authoring
+  anomalies are all accepted at Tier 1 (ingest). They are review findings, not ingest failures.
+
+---
+
+## Curation rules
+
+- Do **not** promote records to `approved` or delete raw records without explicit curation
+  rules and a recorded decision packet.
+- `status = deprecated` changes via the bulk curation CLI **must** supply a non-blank
+  `curation_note`. The CLI enforces this; agents must not bypass it.
+- Bulk curation tools must use SQLAlchemy ORM-based filtering or explicit structured filter
+  parameters. **Never use raw SQL criteria strings** in application or tool code.
+- The `standard_data_type` field is for firm-approved type mapping during curation only.
+  It does **not** replace `data_type`. Raw `data_type` is always preserved as imported.
 
 ---
 

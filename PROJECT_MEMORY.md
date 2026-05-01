@@ -108,15 +108,42 @@ user-notes/             Scratch notes, not version-controlled artifacts
 
 ---
 
+## Curation Workbench
+
+The SQLite database is the **Curation Workbench** — the place where raw Revit evidence is
+reconciled with firm standards. These rules govern how it is used:
+
+- Raw ingest preserves Revit reality exactly. It is not the same thing as approved firm truth.
+- Source-file correction in Revit or shared-parameter `.txt` files is **out of scope for MVP**.
+  For MVP, records that are inherited, polluted, erroneous, or not firm-standard are curated
+  in the DB by setting `status = deprecated` with a `curation_note`.
+- The pipeline has **two validation tiers**:
+  - **Tier 1 — Evidence:** Ingest accepts exactly what Revit emits, including unusual
+    data_type values, blank descriptions, duplicated names, and source anomalies, as long as
+    the required raw fields (`guid`, `name`, `data_type`) pass basic format validation.
+  - **Tier 2 — Standard:** Promotion to `approved` requires stricter validation against
+    approved firm vocabulary and explicit curation rules. Records cannot be promoted without
+    a recorded decision.
+- The `curation_note` field captures the human or script reasoning for any deprecation or
+  curation action. It is required when changing status to `deprecated` via the bulk curation
+  CLI.
+- The `standard_data_type` field is an optional firm-approved type mapping for use during
+  promotion/curation. It does not replace `data_type`; raw `data_type` is always preserved.
+
+---
+
 ## Current status
 
 - [x] Repo initialized and connected to GitHub
 - [x] Dev container successfully built and validated (desktop and laptop)
-- [x] Python pipeline fully operational inside container (27/27 tests passing)
+- [x] Python pipeline fully operational inside container (32/32 tests passing)
 - [x] Claude Code (Max) running inside Dev Container
 - [x] First real pyRevit extraction run (806 parameters, 20260430_220917.json committed/pushed)
-- [ ] First real ingest run against real data
-- [ ] Parameter records reviewed and approved
+- [x] First real ingest run against real data (806 inserted, 0 rejected)
+- [x] Data audit and curation preflight reports completed
+- [x] Curation Workbench model fields and bulk deprecation CLI implemented
+- [ ] Curation preflight anomalies resolved (Identity Data cluster, hand-authored GUIDs, duplicates)
+- [ ] Tracer-bullet parameter set approved
 - [ ] First YAML output generated
 
 ---

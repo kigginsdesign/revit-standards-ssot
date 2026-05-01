@@ -88,3 +88,58 @@ def test_guid_is_primary_key(session):
 
     all_records = session.query(SharedParameterRecord).all()
     assert len(all_records) == 1
+
+
+def test_new_fields_default_null_on_insert(session):
+    session.add(_make_record(GUID_A))
+    session.commit()
+
+    r = session.get(SharedParameterRecord, GUID_A)
+    assert r.curation_note is None
+    assert r.standard_data_type is None
+
+
+def test_new_fields_roundtrip(session):
+    now = datetime.now(timezone.utc)
+    record = SharedParameterRecord(
+        guid=GUID_A,
+        name="Test Param",
+        data_type="Yes/No",
+        status="deprecated",
+        source_file="test.json",
+        curation_note="Inherited from vendor",
+        standard_data_type="YesNo",
+        created_at=now,
+        updated_at=now,
+    )
+    session.add(record)
+    session.commit()
+
+    r = session.get(SharedParameterRecord, GUID_A)
+    assert r.curation_note == "Inherited from vendor"
+    assert r.standard_data_type == "YesNo"
+    assert r.data_type == "Yes/No"
+
+
+def test_deprecated_status_with_curation_note(session):
+    now = datetime.now(timezone.utc)
+    session.add(SharedParameterRecord(
+        guid=GUID_A,
+        name="Test Param",
+        data_type="Text",
+        status="raw",
+        source_file="test.json",
+        created_at=now,
+        updated_at=now,
+    ))
+    session.commit()
+
+    r = session.get(SharedParameterRecord, GUID_A)
+    r.status = "deprecated"
+    r.curation_note = "Not a firm standard"
+    session.commit()
+
+    refreshed = session.get(SharedParameterRecord, GUID_A)
+    assert refreshed.status == "deprecated"
+    assert refreshed.curation_note == "Not a firm standard"
+    assert refreshed.standard_data_type is None

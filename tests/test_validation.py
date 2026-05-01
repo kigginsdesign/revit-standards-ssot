@@ -80,3 +80,39 @@ def test_persisted_parameter_defaults_to_raw_status():
 
     assert p.status == "raw"
     assert p.source_file == "raw.json"
+
+
+def test_new_fields_default_to_none():
+    p = SharedParameter(
+        guid=VALID_GUID,
+        name="X",
+        data_type="Text",
+        source_file="raw.json",
+    )
+    assert p.curation_note is None
+    assert p.standard_data_type is None
+
+
+def test_new_fields_accept_values():
+    p = SharedParameter(
+        guid=VALID_GUID,
+        name="X",
+        data_type="Yes/No",
+        source_file="raw.json",
+        curation_note="Inherited from vendor file",
+        standard_data_type="YesNo",
+    )
+    assert p.curation_note == "Inherited from vendor file"
+    assert p.standard_data_type == "YesNo"
+
+
+def test_raw_data_type_preserved_when_standard_data_type_differs():
+    p = SharedParameter(
+        guid=VALID_GUID,
+        name="X",
+        data_type="Yes/No",
+        source_file="raw.json",
+        standard_data_type="YesNo",
+    )
+    assert p.data_type == "Yes/No"
+    assert p.standard_data_type == "YesNo"

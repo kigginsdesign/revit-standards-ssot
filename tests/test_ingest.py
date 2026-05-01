@@ -141,6 +141,18 @@ def test_unknown_data_type_warning_includes_count_and_samples(session, tmp_path,
     assert "2" in msg
 
 
+def test_ingest_succeeds_without_curation_fields_in_raw_data(session, tmp_path):
+    raw_file = tmp_path / "test.json"
+    _write_raw(raw_file, [{"guid": GUID_A, "name": "Wall Height", "data_type": "Length"}])
+
+    counts = ingest_file(raw_file, session)
+
+    record = session.get(SharedParameterRecord, GUID_A)
+    assert counts["inserted"] == 1
+    assert record.curation_note is None
+    assert record.standard_data_type is None
+
+
 def test_ingest_does_not_downgrade_existing_status_on_upsert(session, tmp_path):
     now = datetime.now(UTC)
     session.add(SharedParameterRecord(

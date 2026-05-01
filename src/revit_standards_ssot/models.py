@@ -73,6 +73,8 @@ class SharedParameter(RawSharedParameter):
 
     status: Status = "raw"
     source_file: str
+    curation_note: str | None = None
+    standard_data_type: str | None = None
 
     @field_validator("source_file")
     @classmethod
@@ -101,6 +103,8 @@ class SharedParameterRecord(Base):
     description: Mapped[str | None] = mapped_column(Text, nullable=True)
     status: Mapped[str] = mapped_column(String(16), nullable=False, default="raw")
     source_file: Mapped[str] = mapped_column(String(512), nullable=False)
+    curation_note: Mapped[str | None] = mapped_column(Text, nullable=True)
+    standard_data_type: Mapped[str | None] = mapped_column(String(64), nullable=True)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True),
         server_default=func.now(),

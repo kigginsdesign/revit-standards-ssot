@@ -72,20 +72,40 @@ See `scripts/pyrevit/README.md` for instructions.
   LocalDB (for existing Autodesk/Advance Steel instances) and a current LocalDB runtime
   resolves this.
 
+## Curation Workbench
+
+The SQLite database is the **Curation Workbench** — where raw Revit evidence is reconciled
+with firm standards before becoming approved output.
+
+The pipeline has two validation tiers:
+
+- **Tier 1 — Evidence (ingest):** Accepts exactly what Revit emits. Unusual data_type
+  values, blank descriptions, duplicate names, and source anomalies are all ingested as-is.
+  They are flagged for review, not rejected.
+- **Tier 2 — Standard (promotion):** Records promoted to `approved` must pass stricter
+  validation against approved firm vocabulary. Promotion requires explicit human review and
+  a recorded decision.
+
+Records that are inherited, polluted, erroneous, or not firm-standard are curated by setting
+`status = deprecated` with a `curation_note` explaining the decision.
+Use `scripts/ingest/bulk_curate.py` for controlled bulk deprecation.
+
 ## Status values
 
-| Status     | Meaning                                         |
-|------------|------------------------------------------------|
-| raw        | Imported from Revit, not yet reviewed           |
-| proposed   | Under review                                    |
-| approved   | Canonical — included in YAML output             |
-| deprecated | Retired — excluded from YAML output             |
+| Status       | Meaning                                         |
+|--------------|------------------------------------------------|
+| `raw`        | Imported from Revit, not yet reviewed           |
+| `proposed`   | Under review                                    |
+| `approved`   | Canonical — included in YAML output             |
+| `deprecated` | Curated out — excluded from all outputs         |
 
 ## Key rules
 
 - GUID is the sole stable identifier. Never use Revit ElementId as a persistent key.
 - Only records with `status = approved` appear in generated YAML.
 - `exports/raw/` is read-only. Do not modify files there.
+- Raw `data_type` is always preserved as imported. The `standard_data_type` field holds the
+  optional firm-approved mapping used during curation.
 
 ## Development Environments
 

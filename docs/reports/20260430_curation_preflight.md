@@ -6,6 +6,13 @@
 **Review CSV:** `outputs/review_20260430_220917.csv`  
 **Auditor:** Max (Claude Code agent)
 
+> **Updated 2026-05-01:** The Curation Workbench model has been formalized. Two new
+> nullable columns have been added to `shared_parameters`: `curation_note` (Text) and
+> `standard_data_type` (String). All existing ingest records have `NULL` for both fields.
+> Bulk deprecation is now performed via `scripts/ingest/bulk_curate.py`, which requires a
+> non-blank `--curation-note` on every `--apply` run. See `PROJECT_MEMORY.md` for the
+> two-tier validation model.
+
 ---
 
 ## A. Executive Summary
